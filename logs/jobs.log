@@ -1,0 +1,4 @@
+[2025-07-22 11:38:04 PM] info: 	✅ MongoDB connected successfully
+[2025-07-22 11:39:34 PM] info: 	::1 - - [22/Jul/2025:18:09:34 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"
+[2025-07-22 11:39:54 PM] info: 	::1 - - [22/Jul/2025:18:09:54 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"
+[2025-07-22 11:40:03 PM] info: 	::1 - - [22/Jul/2025:18:10:03 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"

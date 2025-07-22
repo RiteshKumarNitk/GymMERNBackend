@@ -1,0 +1,8 @@
+[2025-07-22 10:53:02.307 PM] [32minfo[39m: 	[32m::1 - - [22/Jul/2025:17:23:02 +0000] "POST /api/users HTTP/1.1" 500 22 "-" "PostmanRuntime/7.44.1"[39m
+[2025-07-22 10:58:20.480 PM] [32minfo[39m: 	[32m::1 - - [22/Jul/2025:17:28:20 +0000] "POST /api/users HTTP/1.1" 401 40 "-" "PostmanRuntime/7.44.1"[39m
+[2025-07-22 11:23:41.060 PM] [32minfo[39m: 	[32m::1 - - [22/Jul/2025:17:53:41 +0000] "POST /api/setup/superadmin HTTP/1.1" 201 289 "-" "PostmanRuntime/7.44.1"[39m
+[2025-07-22 11:27:55.777 PM] [32minfo[39m: 	[32m::1 - - [22/Jul/2025:17:57:55 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"[39m
+[2025-07-22 11:38:04 PM] info: 	✅ MongoDB connected successfully
+[2025-07-22 11:39:34 PM] info: 	::1 - - [22/Jul/2025:18:09:34 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"
+[2025-07-22 11:39:54 PM] info: 	::1 - - [22/Jul/2025:18:09:54 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"
+[2025-07-22 11:40:03 PM] info: 	::1 - - [22/Jul/2025:18:10:03 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"
