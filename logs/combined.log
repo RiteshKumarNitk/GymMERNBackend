@@ -29,3 +29,62 @@
 [2025-07-23 04:27:25 PM] warn: 	No token provided
 [2025-07-23 04:27:25 PM] info: 	::1 - - [23/Jul/2025:10:57:25 +0000] "POST /api/users HTTP/1.1" 401 27 "-" "PostmanRuntime/7.44.1"
 [2025-07-23 04:47:51 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 07:47:45 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 08:01:56 PM] warn: 	No token provided
+[2025-07-23 08:01:56 PM] info: 	::1 - - [23/Jul/2025:14:31:56 +0000] "POST /api/users HTTP/1.1" 401 27 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 08:03:10 PM] info: 	User logged in: alice@fitlife.com (Role: frontdesk)
+[2025-07-23 08:03:10 PM] info: 	::1 - - [23/Jul/2025:14:33:10 +0000] "POST /api/auth/login HTTP/1.1" 200 396 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 08:30:18 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 08:37:17 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 08:38:25 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 08:39:35 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 08:45:43 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 08:47:55 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 09:29:41 PM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-23 09:29:41 PM] error: 	Trainer creation failed: Cannot read properties of undefined (reading 'TRAINER')
+[2025-07-23 09:29:41 PM] info: 	::1 - - [23/Jul/2025:15:59:41 +0000] "POST /api/trainers HTTP/1.1" 500 88 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 09:38:45 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 10:57:05 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 10:58:26 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 10:58:38 PM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-23 10:58:38 PM] error: 	Trainer creation error: Cannot read properties of undefined (reading 'TRAINER')
+[2025-07-23 10:58:38 PM] info: 	::1 - - [23/Jul/2025:17:28:38 +0000] "POST /api/trainers HTTP/1.1" 500 108 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 11:00:06 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:02:42 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:03:18 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:04:44 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:05:05 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:05:16 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:08:46 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:09:32 PM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-23 11:09:32 PM] info: 	Trainer created by alice@fitlife.com: alex.trainer@gym.com
+[2025-07-23 11:09:33 PM] info: 	::1 - - [23/Jul/2025:17:39:33 +0000] "POST /api/trainers HTTP/1.1" 201 236 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 11:10:02 PM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-23 11:10:02 PM] info: 	Trainer created by alice@fitlife.com: trainer@gym.com
+[2025-07-23 11:10:02 PM] info: 	::1 - - [23/Jul/2025:17:40:02 +0000] "POST /api/trainers HTTP/1.1" 201 227 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 11:12:29 PM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-23 11:12:29 PM] info: 	Trainer created by alice@fitlife.com: trainerkirti@gym.com
+[2025-07-23 11:12:29 PM] info: 	::1 - - [23/Jul/2025:17:42:29 +0000] "POST /api/trainers HTTP/1.1" 201 233 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 11:17:33 PM] info: 	::1 - - [23/Jul/2025:17:47:33 +0000] "GET /api/trainers HTTP/1.1" 404 151 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 11:22:33 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:22:53 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:23:00 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:23:22 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:23:28 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:24:27 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:24:37 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:48:47 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:48:58 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:52:33 PM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-23 11:52:34 PM] info: 	::1 - - [23/Jul/2025:18:22:34 +0000] "POST /api/members HTTP/1.1" 500 40 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 11:57:12 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:57:51 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 11:59:15 PM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-23 11:59:16 PM] info: 	::1 - - [23/Jul/2025:18:29:16 +0000] "POST /api/members HTTP/1.1" 500 109 "-" "PostmanRuntime/7.44.1"
+[2025-07-24 12:04:44 AM] info: 	✅ MongoDB connected successfully
+[2025-07-24 12:06:09 AM] info: 	✅ MongoDB connected successfully
+[2025-07-24 12:08:07 AM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-24 12:08:07 AM] info: 	::1 - - [23/Jul/2025:18:38:07 +0000] "POST /api/members HTTP/1.1" 500 76 "-" "PostmanRuntime/7.44.1"
+[2025-07-24 12:08:21 AM] info: 	Authenticated user: alice@fitlife.com (frontdesk)
+[2025-07-24 12:08:21 AM] info: 	::1 - - [23/Jul/2025:18:38:21 +0000] "POST /api/members HTTP/1.1" 500 76 "-" "PostmanRuntime/7.44.1"
+[2025-07-24 12:09:55 AM] info: 	✅ MongoDB connected successfully

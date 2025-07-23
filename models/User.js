@@ -23,6 +23,10 @@ const UserSchema = new mongoose.Schema({
     enum: ['superadmin', 'owner', 'manager', 'trainer', 'frontdesk', 'member'],
     required: true
   },
+  specialization: {
+    type: String,
+    required: function() { return this.role === 'trainer'; }
+  },
   branch: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Branch'

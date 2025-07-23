@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const setupRoutes = require('./routes/setupRoutes');
+const trainerRoutes = require('./routes/trainerRoutes');
+const memberRoutes = require('./routes/memberRoutes');
 dotenv.config();
 
 const app = express();
@@ -27,6 +29,8 @@ app.use('/api/tenants', require('./routes/tenantRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/members', require('./routes/memberRoutes'));
 app.use('/api/setup', setupRoutes);
+app.use('/api/trainers', trainerRoutes);
+app.use('/api/members', memberRoutes);
 
 // Error Handling Middleware
 const { logger } = require('./utils/logger');

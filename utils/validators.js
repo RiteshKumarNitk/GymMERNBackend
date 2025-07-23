@@ -58,28 +58,50 @@ const validateUserInput = data => {
   };
 };
 
-const validateMemberInput = data => {
+// const validateMemberInput = data => {
+//   let errors = {};
+
+//   data.name = !empty(data.name) ? data.name : '';
+//   data.phone = !empty(data.phone) ? data.phone : '';
+//   data.plan = !empty(data.plan) ? data.plan : '';
+
+//   if (validator.isEmpty(data.name)) {
+//     errors.name = 'Name field is required';
+//   }
+
+//   if (validator.isEmpty(data.phone)) {
+//     errors.phone = 'Phone field is required';
+//   }
+
+//   if (validator.isEmpty(data.plan)) {
+//     errors.plan = 'Plan field is required';
+//   }
+
+//   return {
+//     errors,
+//     isValid: isEmpty(errors)
+//   };
+// };
+const validateMemberInput = (data) => {
   let errors = {};
-
-  data.name = !empty(data.name) ? data.name : '';
-  data.phone = !empty(data.phone) ? data.phone : '';
-  data.plan = !empty(data.plan) ? data.plan : '';
-
-  if (validator.isEmpty(data.name)) {
-    errors.name = 'Name field is required';
+  
+  // Required fields
+  if (!data.name) errors.name = 'Name is required';
+  if (!data.phone) errors.phone = 'Phone number is required';
+  if (!data.plan) errors.plan = 'Membership plan is required';
+  
+  // Format validation
+  if (data.phone && !/^\d{10,15}$/.test(data.phone)) {
+    errors.phone = 'Invalid phone number format';
   }
-
-  if (validator.isEmpty(data.phone)) {
-    errors.phone = 'Phone field is required';
+  
+  if (data.email && !/\S+@\S+\.\S+/.test(data.email)) {
+    errors.email = 'Email is invalid';
   }
-
-  if (validator.isEmpty(data.plan)) {
-    errors.plan = 'Plan field is required';
-  }
-
+  
   return {
     errors,
-    isValid: isEmpty(errors)
+    isValid: Object.keys(errors).length === 0
   };
 };
 

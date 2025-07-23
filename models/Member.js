@@ -16,9 +16,10 @@ const MemberSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  plan: {
+  planType: {
     type: String,
-    required: true
+    required: true,
+    enum: ['basic', 'premium', 'elite'] 
   },
   assignedTrainer: {
     type: mongoose.Schema.Types.ObjectId,
