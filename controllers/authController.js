@@ -7,36 +7,41 @@ const { logger } = require('../utils/logger');
 
 exports.login = async (req, res) => {
   const { errors, isValid } = validateLoginInput(req.body);
-  
+
   if (!isValid) {
+    logger.warn(`Login validation failed: ${JSON.stringify(errors)}`);
     return res.status(400).json(errors);
   }
-  
-  if (!user || !isMatch) {
-    logger.warn(`Failed login attempt for email: ${email}`, { email });
-    return res.status(400).json({ msg: 'Invalid credentials' });
-  }
+
   const { email, password } = req.body;
 
   try {
     const user = await User.findOne({ email }).select('+password');
-    
+
     if (!user) {
+      logger.warn(`Login failed - User not found: ${email}`);
       return res.status(401).json({ msg: 'Invalid credentials' });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
-    
     if (!isMatch) {
+      logger.warn(`Login failed - Incorrect password for user: ${email}`);
       return res.status(401).json({ msg: 'Invalid credentials' });
     }
 
-    const token = generateToken(user);
-    
+    const token = generateToken({
+      id: user._id,
+      email: user.email,
+      role: user.role,
+      tenantId: user.tenantId,
+    });
+
+    logger.info(`User logged in: ${email} (Role: ${user.role})`);
+
     res.json({
       token,
       user: {
-        id: user.id,
+        id: user._id,
         name: user.name,
         email: user.email,
         role: user.role,
@@ -44,7 +49,7 @@ exports.login = async (req, res) => {
       }
     });
   } catch (err) {
-    console.error(err.message);
+    logger.error(`Login error for ${email}: ${err.message}`);
     res.status(500).send('Server error');
   }
 };
@@ -54,7 +59,7 @@ exports.getMe = async (req, res) => {
     const user = await User.findById(req.user.id).select('-password');
     res.json(user);
   } catch (err) {
-    console.error(err.message);
+    logger.error(`GetMe error: ${err.message}`);
     res.status(500).send('Server Error');
   }
 };

@@ -6,7 +6,7 @@ const { logger } = require('../utils/logger');
 
 exports.createTenant = async (req, res) => {
   const { name, domain, contactEmail, ownerName, ownerEmail, ownerPassword } = req.body;
-logger.info(`Tenant created: ${tenant.name} (${tenant.tenantId}) by ${ownerEmail}`);
+
   try {
     // Create tenant
     const tenant = new Tenant({
@@ -32,19 +32,29 @@ logger.info(`Tenant created: ${tenant.name} (${tenant.tenantId}) by ${ownerEmail
 
     await owner.save();
 
+    // Moved the logger AFTER tenant is created
+    logger.info(`Tenant created: ${tenant.name} (${tenant.tenantId}) by ${ownerEmail}`);
+    
     res.status(201).json(tenant);
   } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server error');
+    logger.error(`Tenant creation failed: ${err.message}`);
+    res.status(500).json({ 
+      msg: 'Server error',
+      error: err.message 
+    });
   }
 };
 
 exports.getTenants = async (req, res) => {
   try {
     const tenants = await Tenant.find();
+    logger.info(`Fetched ${tenants.length} tenants`);
     res.json(tenants);
   } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server error');
+    logger.error(`Failed to fetch tenants: ${err.message}`);
+    res.status(500).json({
+      msg: 'Server error',
+      error: err.message
+    });
   }
 };

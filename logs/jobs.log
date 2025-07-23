@@ -2,3 +2,26 @@
 [2025-07-22 11:39:34 PM] info: 	::1 - - [22/Jul/2025:18:09:34 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"
 [2025-07-22 11:39:54 PM] info: 	::1 - - [22/Jul/2025:18:09:54 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"
 [2025-07-22 11:40:03 PM] info: 	::1 - - [22/Jul/2025:18:10:03 +0000] "POST /api/setup/superadmin HTTP/1.1" 400 35 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 03:35:23 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 03:37:07 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 03:37:13 PM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-07-23 03:37:13 PM] info: 	::1 - - [23/Jul/2025:10:07:13 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 03:51:55 PM] info: 	::1 - - [23/Jul/2025:10:21:55 +0000] "POST /api/tenants HTTP/1.1" 401 24 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 03:59:27 PM] info: 	::1 - - [23/Jul/2025:10:29:27 +0000] "POST /api/tenants HTTP/1.1" 401 24 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 04:00:26 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 04:00:30 PM] info: 	::1 - - [23/Jul/2025:10:30:30 +0000] "POST /api/tenants HTTP/1.1" 401 29 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 04:08:53 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 04:10:00 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 04:11:14 PM] info: 	✅ MongoDB connected successfully
+[2025-07-23 04:11:44 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-07-23 04:11:44 PM] info: 	Tenant created: FitLife Gym (fitlife-example-com) by john@fitlife.com
+[2025-07-23 04:11:44 PM] info: 	::1 - - [23/Jul/2025:10:41:44 +0000] "POST /api/tenants HTTP/1.1" 201 215 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 04:18:11 PM] info: 	User logged in: john@fitlife.com (Role: owner)
+[2025-07-23 04:18:11 PM] info: 	::1 - - [23/Jul/2025:10:48:11 +0000] "POST /api/auth/login HTTP/1.1" 200 381 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 04:21:02 PM] info: 	Authenticated user: john@fitlife.com (owner)
+[2025-07-23 04:21:02 PM] info: 	::1 - - [23/Jul/2025:10:51:02 +0000] "GET /api/users HTTP/1.1" 200 250 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 04:24:18 PM] info: 	Authenticated user: john@fitlife.com (owner)
+[2025-07-23 04:24:18 PM] info: 	::1 - - [23/Jul/2025:10:54:18 +0000] "POST /api/users HTTP/1.1" 201 258 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 04:27:25 PM] warn: 	No token provided
+[2025-07-23 04:27:25 PM] info: 	::1 - - [23/Jul/2025:10:57:25 +0000] "POST /api/users HTTP/1.1" 401 27 "-" "PostmanRuntime/7.44.1"
+[2025-07-23 04:47:51 PM] info: 	✅ MongoDB connected successfully

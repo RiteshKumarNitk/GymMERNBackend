@@ -1,30 +1,31 @@
+// middleware/auth.js
 const jwt = require('jsonwebtoken');
-const { verifyToken } = require('../utils/jwt');
 const User = require('../models/User');
+const { logger } = require('../utils/logger');
 
 const auth = async (req, res, next) => {
   try {
-    const authHeader = req.header('Authorization');
-
-    // Check if header is present and properly formatted
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      return res.status(401).json({ msg: 'No token, authorization denied' });
+    const token = req.header('Authorization')?.replace('Bearer ', '');
+    
+    if (!token) {
+      logger.warn('No token provided');
+      return res.status(401).json({ msg: 'No token provided' });
     }
 
-    const token = authHeader.replace('Bearer ', '');
-
-    const decoded = verifyToken(token);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     const user = await User.findById(decoded.id).select('-password');
 
     if (!user) {
-      return res.status(401).json({ msg: 'Token is not valid' });
+      logger.warn('Invalid token - user not found');
+      return res.status(401).json({ msg: 'Invalid token' });
     }
 
-    req.user = user;
+    req.user = user; // This attaches the user to the request
+    logger.info(`Authenticated user: ${user.email} (${user.role})`);
     next();
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ msg: 'Server Error' });
+    logger.error(`Authentication error: ${err.message}`);
+    res.status(401).json({ msg: 'Please authenticate' });
   }
 };
 

@@ -17,9 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan('combined', { stream: morganMiddleware }));
 
 
-
 // Database Connection
 require('./config/db')();
+
 
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
