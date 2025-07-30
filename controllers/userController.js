@@ -52,14 +52,49 @@ exports.createUser = async (req, res) => {
   }
 };
 
-// @desc    Get all users in the tenant
-// @route   GET /api/users
+
+// controllers/userController.js
 exports.getUsers = async (req, res) => {
   try {
-    const users = await User.find({ tenantId: req.user.tenantId });
-    res.json(users);
+    // Super Admin can specify tenantId in query
+    const tenantId = req.user.role === ROLES.SUPERADMIN 
+      ? req.query.tenantId || req.user.tenantId
+      : req.user.tenantId;
+    
+    // Build filter based on role
+    let filter = { tenantId };
+    
+    if (req.user.role === ROLES.MANAGER) {
+      // Manager can only see staff in their branch
+      filter.branch = req.user.branch;
+    }
+    
+    const users = await User.find(filter)
+      .select('-password')
+      .populate('branch', 'name');
+    
+    res.json({
+      success: true,
+      count: users.length,
+      data: users
+    });
   } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server error');
+    logger.error(`Get users failed: ${err.message}`);
+    res.status(500).json({
+      success: false,
+      error: 'Server error'
+    });
   }
 };
+
+// @desc    Get all users in the tenant
+// @route   GET /api/users
+// exports.getUsers = async (req, res) => {
+//   try {
+//     const users = await User.find({ tenantId: req.user.tenantId });
+//     res.json(users);
+//   } catch (err) {
+//     console.error(err.message);
+//     res.status(500).send('Server error');
+//   }
+// };
