@@ -6,249 +6,558 @@
   },
   "item": [
     {
-      "name": "Create Super Admin (Initial Setup)",
-      "event": [
+      "name": "1. Super Admin Operations",
+      "item": [
         {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "// Run this once to create first super admin",
-              "pm.sendRequest({",
-              "  url: 'http://localhost:5000/api/users',",
-              "  method: 'POST',",
-              "  header: 'Content-Type:application/json',",
-              "  body: {",
-              "    mode: 'raw',",
-              "    raw: JSON.stringify({",
-              "      tenantId: 'superadmin',",
-              "      name: 'Super Admin',",
-              "      email: 'superadmin@example.com',",
-              "      password: 'admin123',",
-              "      role: 'superadmin'",
-              "    })",
-              "  }",
-              "}, function (err, res) {",
-              "  console.log(res.json());",
-              "});"
+          "name": "Create Super Admin (Initial Setup)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// Run this once to create first super admin",
+                  "pm.sendRequest({",
+                  "  url: 'http://localhost:5000/api/users',",
+                  "  method: 'POST',",
+                  "  header: 'Content-Type:application/json',",
+                  "  body: {",
+                  "    mode: 'raw',",
+                  "    raw: JSON.stringify({",
+                  "      tenantId: 'superadmin',",
+                  "      name: 'Super Admin',",
+                  "      email: 'superadmin@example.com',",
+                  "      password: 'admin123',",
+                  "      role: 'superadmin'",
+                  "    })",
+                  "  }",
+                  "}, function (err, res) {",
+                  "  console.log(res.json());",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Login as Super Admin",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
-            "type": "text/javascript"
-          }
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"superadmin@example.com\",\n    \"password\": \"admin123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get CRM Reports",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{superadmin_token}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/superadmin/reports",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "superadmin",
+                "reports"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Tenants",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{superadmin_token}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/superadmin/tenants",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "superadmin",
+                "tenants"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Tenant (Gym)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{superadmin_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"FitLife Gym\",\n    \"domain\": \"fitlife.example.com\",\n    \"contactEmail\": \"admin@fitlife.com\",\n    \"ownerName\": \"John Doe\",\n    \"ownerEmail\": \"john@fitlife.com\",\n    \"ownerPassword\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/tenants",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "tenants"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Tenant Details",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{superadmin_token}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/superadmin/tenants/:id",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "superadmin",
+                "tenants",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "tenant_id_here"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ]
     },
     {
-      "name": "Login as Super Admin",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"email\": \"superadmin@example.com\",\n    \"password\": \"admin123\"\n}"
-        },
-        "url": {
-          "raw": "http://localhost:5000/api/auth/login",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "api",
-            "auth",
-            "login"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Create Tenant",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+      "name": "2. Gym Owner Operations",
+      "item": [
+        {
+          "name": "Login as Gym Owner",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"john@fitlife.com\",\n    \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
           },
-          {
-            "key": "Authorization",
-            "value": "Bearer {{superadmin_token}}"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"name\": \"FitLife Gym\",\n    \"domain\": \"fitlife.example.com\",\n    \"contactEmail\": \"admin@fitlife.com\",\n    \"ownerName\": \"John Doe\",\n    \"ownerEmail\": \"john@fitlife.com\",\n    \"ownerPassword\": \"password123\"\n}"
+          "response": []
         },
-        "url": {
-          "raw": "http://localhost:5000/api/tenants",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "api",
-            "tenants"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Login as Gym Owner",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"email\": \"john@fitlife.com\",\n    \"password\": \"password123\"\n}"
-        },
-        "url": {
-          "raw": "http://localhost:5000/api/auth/login",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "api",
-            "auth",
-            "login"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Create Front Desk Staff",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+        {
+          "name": "Get Gym Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{owner_token}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/gym/profile",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "gym",
+                "profile"
+              ]
+            }
           },
-          {
-            "key": "Authorization",
-            "value": "Bearer {{owner_token}}"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"name\": \"Alice Johnson\",\n    \"email\": \"alice@fitlife.com\",\n    \"password\": \"alice123\",\n    \"role\": \"frontdesk\"\n}"
+          "response": []
         },
-        "url": {
-          "raw": "http://localhost:5000/api/users",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "api",
-            "users"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Login as Front Desk",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"email\": \"alice@fitlife.com\",\n    \"password\": \"alice123\"\n}"
-        },
-        "url": {
-          "raw": "http://localhost:5000/api/auth/login",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "api",
-            "auth",
-            "login"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Create Member",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+        {
+          "name": "Update Gym Profile",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{owner_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"FitLife Gym Updated\",\n    \"contactEmail\": \"updated@fitlife.com\",\n    \"contactPhone\": \"555-123-4567\",\n    \"address\": \"123 Fitness Ave, Gymtown\",\n    \"businessHours\": {\n        \"monday\": \"6:00 AM - 10:00 PM\",\n        \"tuesday\": \"6:00 AM - 10:00 PM\",\n        \"wednesday\": \"6:00 AM - 10:00 PM\",\n        \"thursday\": \"6:00 AM - 10:00 PM\",\n        \"friday\": \"6:00 AM - 10:00 PM\",\n        \"saturday\": \"8:00 AM - 8:00 PM\",\n        \"sunday\": \"8:00 AM - 6:00 PM\"\n    }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/gym/profile",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "gym",
+                "profile"
+              ]
+            }
           },
-          {
-            "key": "Authorization",
-            "value": "Bearer {{frontdesk_token}}"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"name\": \"Bob Smith\",\n    \"phone\": \"123-456-7890\",\n    \"plan\": \"premium\",\n    \"email\": \"bob@example.com\"\n}"
+          "response": []
         },
-        "url": {
-          "raw": "http://localhost:5000/api/members",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "api",
-            "members"
-          ]
+        {
+          "name": "Create Front Desk Staff",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{owner_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Alice Johnson\",\n    \"email\": \"alice@fitlife.com\",\n    \"password\": \"alice123\",\n    \"role\": \"frontdesk\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Manager",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{owner_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Mike Manager\",\n    \"email\": \"mike@fitlife.com\",\n    \"password\": \"mike123\",\n    \"role\": \"manager\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Users",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{owner_token}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          },
+          "response": []
         }
-      },
-      "response": []
+      ]
     },
     {
-      "name": "Get Members",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer {{owner_token}}"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/api/members",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "api",
-            "members"
-          ]
+      "name": "3. Front Desk Operations",
+      "item": [
+        {
+          "name": "Login as Front Desk",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"alice@fitlife.com\",\n    \"password\": \"alice123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Trainer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{frontdesk_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Tom Trainer\",\n    \"email\": \"tom@fitlife.com\",\n    \"password\": \"tom123\",\n    \"specialization\": \"Strength Training\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/trainers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "trainers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Trainers",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{frontdesk_token}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/trainers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "trainers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Member",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{frontdesk_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Bob Smith\",\n    \"phone\": \"123-456-7890\",\n    \"planType\": \"premium\",\n    \"email\": \"bob@example.com\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/members",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "members"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Member with Trainer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{frontdesk_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Sarah Johnson\",\n    \"phone\": \"987-654-3210\",\n    \"planType\": \"premium\",\n    \"email\": \"sarah@example.com\",\n    \"trainerId\": \"{{trainer_id}}\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/members",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "members"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Members",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{frontdesk_token}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/members",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "members"
+              ]
+            }
+          },
+          "response": []
         }
-      },
-      "response": []
+      ]
     }
   ],
   "variable": [
@@ -263,6 +572,11 @@
     {
       "key": "frontdesk_token",
       "value": ""
+    },
+    {
+      "key": "trainer_id",
+      "value": "",
+      "description": "ID of a trainer to assign to members"
     }
   ]
 }

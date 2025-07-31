@@ -146,7 +146,7 @@ exports.getMembers = async (req, res) => {
 // @route   POST /api/members
 // @access  Private (FrontDesk, Manager, Owner)
 // exports.createMember = async (req, res) => {
-//   const { name, email, phone, plan, assignedTrainer } = req.body;
+//   const { name, email, phone, planType, assignedTrainer } = req.body;
   
 //   // Input validation
 //   const { errors, isValid } = validateMemberInput(req.body);
@@ -176,7 +176,7 @@ exports.getMembers = async (req, res) => {
 //       name,
 //       email,
 //       phone,
-//       plan,
+//       planType,
 //       assignedTrainer: assignedTrainer || null,
 //       joinDate: new Date()
 //     });

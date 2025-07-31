@@ -13,6 +13,11 @@ router.post(
   trainerController.createTrainer
 );
 
-// Add other trainer routes (GET, PUT, DELETE) here...
+router.get(
+  '/',
+  auth,
+  roleGuard([ROLES.FRONTDESK, ROLES.MANAGER, ROLES.OWNER, ROLES.TRAINER]),
+  trainerController.getTrainers
+);
 
 module.exports = router;
