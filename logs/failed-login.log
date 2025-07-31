@@ -4,3 +4,5 @@
 [2025-07-23 10:58:38 PM] error: 	Trainer creation error: Cannot read properties of undefined (reading 'TRAINER')
 [2025-07-30 07:11:12 AM] warn: 	No token provided
 [2025-07-30 07:14:15 AM] warn: 	No token provided
+[2025-07-31 08:00:00 AM] error: 	Error in expiring subscriptions job
+[2025-07-31 08:05:44 AM] error: 	Authentication error: jwt malformed

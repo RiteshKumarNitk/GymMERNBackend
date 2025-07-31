@@ -22,12 +22,20 @@ app.use(morgan('combined', { stream: morganMiddleware }));
 // Database Connection
 require('./config/db')();
 
+// Initialize scheduled jobs
+const { initSubscriptionJobs } = require('./jobs/subscriptionJobs');
+initSubscriptionJobs();
+
 
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/tenants', require('./routes/tenantRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/members', require('./routes/memberRoutes'));
+app.use('/api/subscriptions', require('./routes/subscriptionRoutes'));
+
+app.use('/api/superadmin', require('./routes/superadminRoutes'));
+app.use('/api/gym', require('./routes/gymRoutes'));
 app.use('/api/setup', setupRoutes);
 app.use('/api/trainers', trainerRoutes);
 app.use('/api/members', memberRoutes);
