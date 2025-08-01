@@ -231,3 +231,15 @@
 [2025-07-31 08:12:15 AM] info: 	::1 - - [31/Jul/2025:02:42:15 +0000] "POST /api/members HTTP/1.1" 201 810 "-" "PostmanRuntime/7.44.1"
 [2025-07-31 08:13:55 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
 [2025-07-31 08:13:55 AM] info: 	::1 - - [31/Jul/2025:02:43:55 +0000] "POST /api/tenants HTTP/1.1" 400 51 "-" "PostmanRuntime/7.44.1"
+[2025-08-01 06:40:59 AM] info: 	Subscription scheduled jobs initialized
+[2025-08-01 06:41:39 AM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-01 06:41:39 AM] info: 	::1 - - [01/Aug/2025:01:11:39 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "-" "PostmanRuntime/7.44.1"
+[2025-08-01 06:50:09 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-01 06:50:09 AM] info: 	::1 - - [01/Aug/2025:01:20:09 +0000] "POST /api/tenants HTTP/1.1" 400 51 "-" "PostmanRuntime/7.44.1"
+[2025-08-01 06:50:52 AM] info: 	::1 - - [01/Aug/2025:01:20:52 +0000] "POST /api/tenants/create HTTP/1.1" 404 158 "-" "PostmanRuntime/7.44.1"
+[2025-08-01 07:20:50 AM] info: 	Subscription scheduled jobs initialized
+[2025-08-01 07:23:12 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-01 07:23:12 AM] info: 	::1 - - [01/Aug/2025:01:53:12 +0000] "POST /api/tenants HTTP/1.1" 400 51 "-" "PostmanRuntime/7.44.1"
+[2025-08-01 07:28:10 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-01 07:28:10 AM] info: 	Tenant created: Run Gym (Run-example-com) by superadmin2@example.com
+[2025-08-01 07:28:10 AM] info: 	::1 - - [01/Aug/2025:01:58:10 +0000] "POST /api/tenants HTTP/1.1" 201 1310 "-" "PostmanRuntime/7.44.1"

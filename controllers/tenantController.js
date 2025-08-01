@@ -5,10 +5,23 @@ const { logger } = require('../utils/logger');
 const ROLES = require('../config/roles');
 
 // @desc    Create new tenant (gym)
-// @route   POST /api/tenants
+// @route   POST /api/tenants 
 // @access  Super Admin
 exports.createTenant = async (req, res) => {
-  const { name, domain, contactEmail, ownerName, ownerEmail, ownerPassword } = req.body;
+  // const { name, domain, contactEmail, ownerName, ownerEmail, ownerPassword } = req.body;
+  const {
+    name,
+    domain,
+    contactEmail,
+    ownerName,
+    ownerEmail,
+    ownerPassword,
+    contactPhone,
+    businessDetails,
+    location,
+    billingAddress,
+    businessHours
+  } = req.body;
 
   try {
     // Validate input
@@ -20,12 +33,24 @@ exports.createTenant = async (req, res) => {
     }
     
     // Create tenant
-    const tenant = new Tenant({
+    // const tenant = new Tenant({
+    //   name,
+    //   domain,
+    //   contactEmail,
+    //   tenantId: domain.replace(/\./g, '-'),
+    //   status: 'active'
+    // });
+      const tenant = new Tenant({
       name,
       domain,
       contactEmail,
       tenantId: domain.replace(/\./g, '-'),
-      status: 'active'
+      status: 'active',
+      contactPhone,
+      businessDetails,
+      location,
+      billingAddress,
+      businessHours
     });
     
     await tenant.save();
