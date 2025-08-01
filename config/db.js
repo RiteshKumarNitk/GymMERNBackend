@@ -13,7 +13,7 @@ const connectDB = async () => {
     process.exit(1);
   }
 
-  // Optional: log slow queries if needed
+  // Optional: log slow queries if needed i am vandana
   mongoose.set('debug', function (coll, method, query, doc, options) {
     const start = Date.now();
     return function (err, result) {
