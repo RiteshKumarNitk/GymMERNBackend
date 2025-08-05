@@ -141,6 +141,165 @@ exports.getMembers = async (req, res) => {
   }
 };
 
+// @desc    Get a single member by ID
+// @route   GET /api/members/:id
+// @access  Private (FrontDesk, Manager, Owner, Trainer)
+exports.getMember = async (req, res) => {
+  try {
+    const memberId = req.params.id;
+    
+    // Basic query with tenant check for security
+    const query = { 
+      _id: memberId,
+      tenantId: req.user.tenantId 
+    };
+    
+    // Add trainer check if user is a trainer
+    if (req.user.role === ROLES.TRAINER) {
+      query.assignedTrainer = req.user._id;
+    }
+
+    const member = await Member.findOne(query)
+      .populate('assignedTrainer', 'name email');
+
+    if (!member) {
+      logger.warn(`Member not found: ${memberId} - requested by ${req.user.email}`);
+      return res.status(404).json({
+        success: false,
+        error: 'Member not found'
+      });
+    }
+
+    logger.info(`Member ${memberId} retrieved by ${req.user.email}`);
+    res.json({
+      success: true,
+      data: member
+    });
+
+  } catch (err) {
+    logger.error(`Get member error: ${err.message}`);
+    res.status(500).json({ 
+      success: false,
+      error: 'Server error'
+    });
+  }
+};
+
+// @desc    Update a member
+// @route   PUT /api/members/:id
+// @access  Private (FrontDesk, Manager, Owner)
+exports.updateMember = async (req, res) => {
+  try {
+    const memberId = req.params.id;
+    const { name, email, phone, planType, trainerId } = req.body;
+    
+    // Basic validation
+    if (!name || !phone || !planType) {
+      logger.warn(`Member update validation failed - missing fields`);
+      return res.status(400).json({ 
+        success: false,
+        error: 'Name, phone and plan type are required' 
+      });
+    }
+
+    // Verify trainer exists if assigned
+    if (trainerId) {
+      const trainer = await User.findOne({
+        _id: trainerId,
+        role: ROLES.TRAINER,
+        tenantId: req.user.tenantId
+      });
+      
+      if (!trainer) {
+        logger.warn(`Trainer not found: ${trainerId}`);
+        return res.status(400).json({
+          success: false,
+          error: 'Trainer not found'
+        });
+      }
+    }
+
+    // Find member with tenant check for security
+    const member = await Member.findOne({ 
+      _id: memberId,
+      tenantId: req.user.tenantId 
+    });
+
+    if (!member) {
+      logger.warn(`Member not found for update: ${memberId}`);
+      return res.status(404).json({
+        success: false,
+        error: 'Member not found'
+      });
+    }
+
+    // Update member fields
+    member.name = name;
+    member.email = email;
+    member.phone = phone;
+    member.planType = planType;
+    member.assignedTrainer = trainerId || null;
+
+    await member.save();
+    logger.info(`Member updated: ${memberId} by ${req.user.email}`);
+
+    res.json({
+      success: true,
+      data: member
+    });
+
+  } catch (err) {
+    logger.error(`Update member error: ${err.message}`);
+    res.status(500).json({ 
+      success: false,
+      error: 'Server error',
+      details: process.env.NODE_ENV === 'development' ? err.message : undefined
+    });
+  }
+};
+
+// @desc    Delete a member
+// @route   DELETE /api/members/:id
+// @access  Private (Manager, Owner)
+exports.deleteMember = async (req, res) => {
+  try {
+    const memberId = req.params.id;
+
+    // Find member with tenant check for security
+    const member = await Member.findOne({ 
+      _id: memberId,
+      tenantId: req.user.tenantId 
+    });
+
+    if (!member) {
+      logger.warn(`Member not found for deletion: ${memberId}`);
+      return res.status(404).json({
+        success: false,
+        error: 'Member not found'
+      });
+    }
+
+    // Delete associated workout plans
+    await WorkoutPlan.deleteMany({ memberId: memberId });
+    
+    // Delete the member
+    await Member.deleteOne({ _id: memberId });
+    
+    logger.info(`Member deleted: ${memberId} by ${req.user.email}`);
+    res.json({
+      success: true,
+      message: 'Member deleted successfully'
+    });
+
+  } catch (err) {
+    logger.error(`Delete member error: ${err.message}`);
+    res.status(500).json({ 
+      success: false,
+      error: 'Server error'
+    });
+  }
+};
+
 
 // @desc    Create a new member
 // @route   POST /api/members
