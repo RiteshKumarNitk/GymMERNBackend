@@ -1,113 +1,110 @@
 const mongoose = require('mongoose');
 
+// Reusable sub-schema for business hours
 const BusinessHoursSchema = new mongoose.Schema({
   day: {
     type: String,
     enum: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
-    required: true
+    required: true,
   },
-  open: {
-    type: String,
-    required: true
-  },
-  close: {
-    type: String,
-    required: true
-  }
+  open: { type: String, required: true },
+  close: { type: String, required: true },
 });
 
+// Reusable sub-schema for location
 const LocationSchema = new mongoose.Schema({
-  address: {
-    type: String,
-    required: true
-  },
-  city: {
-    type: String,
-    required: true
-  },
-  state: {
-    type: String,
-    required: true
-  },
-  zipCode: {
-    type: String,
-    required: true
-  },
-  country: {
-    type: String,
-    required: true,
-    default: 'India'
-  }
-});
+  address: { type: String, required: true },
+  city: { type: String, required: true },
+  state: { type: String, required: true },
+  zipCode: { type: String, required: true },
+  country: { type: String, required: true, default: 'India' },
+}, { _id: false });
 
+// Main tenant schema
 const TenantSchema = new mongoose.Schema({
-  tenantId: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  name: {
-    type: String,
-    required: true
-  },
-  domain: {
-    type: String,
-    required: true
-  },
-  status: {
-    type: String,
-    enum: ['active', 'inactive', 'trial', 'suspended'],
-    default: 'trial'
-  },
+  tenantId: { type: String, required: true, unique: true },
+  name: { type: String, required: true },
+  domain: { type: String, required: true, unique: true },
+  contactEmail: { type: String, required: true },
+  contactPhone: { type: String },
+  ownerName: { type: String, required: true },
+
   subscriptionType: {
     type: String,
     enum: ['trial', 'monthly', 'biannual', 'annual'],
-    default: 'trial'
+    default: 'trial',
   },
-  subscriptionStartDate: {
-    type: Date,
-    default: Date.now
-  },
+  subscriptionStartDate: { type: Date, default: Date.now },
   subscriptionEndDate: {
     type: Date,
-    default: function() {
+    default: function () {
       const date = new Date();
-      // Default trial period of 14 days
-      date.setDate(date.getDate() + 14);
+      date.setDate(date.getDate() + 14); // 14-day trial by default
       return date;
-    }
+    },
   },
-  createdAt: {
-    type: Date,
-    default: Date.now
-  },
-  contactEmail: {
+  autoRenew: { type: Boolean, default: false },
+
+  onboardingStatus: {
     type: String,
-    required: true
+    enum: ['pending', 'setup_in_progress', 'completed'],
+    default: 'pending',
   },
-  contactPhone: {
-    type: String
+
+  status: {
+    type: String,
+    enum: ['active', 'inactive', 'trial', 'suspended'],
+    default: 'active',
   },
+
+  location: LocationSchema,
+
+  billingAddress: { type: String },
+
   businessDetails: {
-    gstNumber: String,
-    registrationNumber: String,
+    gstNumber: { type: String },
+    registrationNumber: { type: String },
     businessType: {
       type: String,
-      enum: ['sole_proprietorship', 'partnership', 'corporation', 'llc', 'other'],
-      default: 'other'
-    }
+      enum: ['fitness_center',
+        'yoga_studio',
+        'martial_arts_school',
+        'personal_training',
+        'crossfit_box',
+        'other'],
+      default: 'other',
+    },
   },
-  location: LocationSchema,
-  billingAddress: {
-    type: String
-  },
+
   businessHours: [BusinessHoursSchema],
-  autoRenew: {
-    type: Boolean,
-    default: false
+
+  branding: {
+    logoUrl: { type: String },
+    primaryColor: { type: String },
+    secondaryColor: { type: String },
   },
-  lastBillingDate: Date,
-  nextBillingDate: Date
+
+  paymentGateway: {
+    stripeCustomerId: { type: String },
+    razorpayCustomerId: { type: String },
+    billingEmail: { type: String },
+  },
+
+  features: {
+    enableReports: { type: Boolean, default: true },
+    enableAttendance: { type: Boolean, default: true },
+    enableChat: { type: Boolean, default: false },
+  },
+
+  createdAt: { type: Date, default: Date.now },
+  updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  isDeleted: { type: Boolean, default: false },
 });
+
+
+// Indexes for performance
+TenantSchema.index({ tenantId: 1 });
+TenantSchema.index({ domain: 1 });
+TenantSchema.index({ status: 1 });
 
 module.exports = mongoose.model('Tenant', TenantSchema);
