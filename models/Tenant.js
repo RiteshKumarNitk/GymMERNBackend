@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate-v2');
+
 
 const BusinessHoursSchema = new mongoose.Schema({
   day: {
@@ -109,5 +111,7 @@ const TenantSchema = new mongoose.Schema({
   lastBillingDate: Date,
   nextBillingDate: Date
 });
+
+TenantSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('Tenant', TenantSchema);

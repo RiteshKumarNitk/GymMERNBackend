@@ -243,3 +243,521 @@
 [2025-08-01 07:28:10 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
 [2025-08-01 07:28:10 AM] info: 	Tenant created: Run Gym (Run-example-com) by superadmin2@example.com
 [2025-08-01 07:28:10 AM] info: 	::1 - - [01/Aug/2025:01:58:10 +0000] "POST /api/tenants HTTP/1.1" 201 1310 "-" "PostmanRuntime/7.44.1"
+[2025-08-11 09:34:03 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-11 09:34:15 PM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-11 09:34:15 PM] info: 	::1 - - [11/Aug/2025:16:04:15 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:34:18 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:34:18 PM] error: 	Get tenants failed: Tenant.paginate is not a function
+[2025-08-11 09:34:18 PM] info: 	::1 - - [11/Aug/2025:16:04:18 +0000] "GET /api/tenants HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:34:18 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:34:18 PM] error: 	Get tenants failed: Tenant.paginate is not a function
+[2025-08-11 09:34:18 PM] info: 	::1 - - [11/Aug/2025:16:04:18 +0000] "GET /api/tenants HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:41:48 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-11 09:41:54 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:41:54 PM] info: 	::1 - - [11/Aug/2025:16:11:54 +0000] "GET /api/tenants HTTP/1.1" 200 8760 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:41:54 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:41:54 PM] info: 	::1 - - [11/Aug/2025:16:11:54 +0000] "GET /api/tenants HTTP/1.1" 200 8760 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:42:03 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:42:03 PM] info: 	::1 - - [11/Aug/2025:16:12:03 +0000] "PUT /api/tenants/ironfit HTTP/1.1" 200 799 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:42:59 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:42:59 PM] info: 	::1 - - [11/Aug/2025:16:12:59 +0000] "PUT /api/tenants/ironfit HTTP/1.1" 200 801 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:43:01 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:43:01 PM] info: 	::1 - - [11/Aug/2025:16:13:01 +0000] "PUT /api/tenants/fitnest-com HTTP/1.1" 200 1203 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:43:56 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:43:56 PM] info: 	::1 - - [11/Aug/2025:16:13:56 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:43:56 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:43:56 PM] info: 	::1 - - [11/Aug/2025:16:13:56 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:44:14 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:44:14 PM] info: 	::1 - - [11/Aug/2025:16:14:14 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:44:14 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:44:14 PM] info: 	::1 - - [11/Aug/2025:16:14:14 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:44:23 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:44:23 PM] info: 	::1 - - [11/Aug/2025:16:14:23 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:44:23 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:44:23 PM] info: 	::1 - - [11/Aug/2025:16:14:23 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:44:27 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:44:27 PM] info: 	::1 - - [11/Aug/2025:16:14:27 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 09:44:27 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 09:44:27 PM] info: 	::1 - - [11/Aug/2025:16:14:27 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 11:03:53 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 11:03:53 PM] info: 	::1 - - [11/Aug/2025:17:33:53 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-11 11:03:53 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-11 11:03:53 PM] info: 	::1 - - [11/Aug/2025:17:33:53 +0000] "GET /api/tenants HTTP/1.1" 200 8758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:05:28 AM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 09:12:00 AM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-12 09:12:00 AM] info: 	::1 - - [12/Aug/2025:03:42:00 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:14:18 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 09:14:19 AM] info: 	Tenant created: nivansh (yoga) by superadmin2@example.com
+[2025-08-12 09:14:19 AM] info: 	::1 - - [12/Aug/2025:03:44:19 +0000] "POST /api/tenants HTTP/1.1" 201 749 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:16:47 AM] info: 	User logged in: nivansh@gmail.com (Role: owner)
+[2025-08-12 09:16:47 AM] info: 	::1 - - [12/Aug/2025:03:46:47 +0000] "POST /api/auth/login HTTP/1.1" 200 346 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:16:49 AM] info: 	Authenticated user: nivansh@gmail.com (owner)
+[2025-08-12 09:16:49 AM] info: 	0 members retrieved by nivansh@gmail.com
+[2025-08-12 09:16:49 AM] info: 	::1 - - [12/Aug/2025:03:46:49 +0000] "GET /api/members HTTP/1.1" 200 36 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:16:49 AM] info: 	Authenticated user: nivansh@gmail.com (owner)
+[2025-08-12 09:16:50 AM] info: 	0 members retrieved by nivansh@gmail.com
+[2025-08-12 09:16:50 AM] info: 	::1 - - [12/Aug/2025:03:46:50 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:17:35 AM] info: 	Authenticated user: nivansh@gmail.com (owner)
+[2025-08-12 09:17:35 AM] info: 	::1 - - [12/Aug/2025:03:47:35 +0000] "GET /api/tenants HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:17:35 AM] info: 	Authenticated user: nivansh@gmail.com (owner)
+[2025-08-12 09:17:35 AM] info: 	::1 - - [12/Aug/2025:03:47:35 +0000] "GET /api/tenants HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:18:12 AM] info: 	Authenticated user: nivansh@gmail.com (owner)
+[2025-08-12 09:18:12 AM] info: 	::1 - - [12/Aug/2025:03:48:12 +0000] "GET /api/tenants HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:18:12 AM] info: 	Authenticated user: nivansh@gmail.com (owner)
+[2025-08-12 09:18:12 AM] info: 	::1 - - [12/Aug/2025:03:48:12 +0000] "GET /api/tenants HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:19:16 AM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 09:19:41 AM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-12 09:19:41 AM] info: 	::1 - - [12/Aug/2025:03:49:41 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:19:45 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 09:19:45 AM] info: 	::1 - - [12/Aug/2025:03:49:45 +0000] "GET /api/tenants HTTP/1.1" 200 9484 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:19:45 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 09:19:45 AM] info: 	::1 - - [12/Aug/2025:03:49:45 +0000] "GET /api/tenants HTTP/1.1" 200 9484 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:19:48 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 09:19:48 AM] info: 	::1 - - [12/Aug/2025:03:49:48 +0000] "PUT /api/tenants/yoga HTTP/1.1" 200 751 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:20:09 AM] info: 	User logged in: nivansh@gmail.com (Role: owner)
+[2025-08-12 09:20:09 AM] info: 	::1 - - [12/Aug/2025:03:50:09 +0000] "POST /api/auth/login HTTP/1.1" 200 346 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:24:26 AM] info: 	User logged in: nivansh@gmail.com (Role: owner)
+[2025-08-12 09:24:26 AM] info: 	::1 - - [12/Aug/2025:03:54:26 +0000] "POST /api/auth/login HTTP/1.1" 200 346 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:15:22 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 03:16:03 PM] info: 	::1 - - [12/Aug/2025:09:46:03 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:32:16 PM] info: 	::1 - - [12/Aug/2025:10:02:16 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:35:16 PM] info: 	::1 - - [12/Aug/2025:10:05:16 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:36:23 PM] info: 	::1 - - [12/Aug/2025:10:06:23 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:43:48 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 03:44:01 PM] info: 	::1 - - [12/Aug/2025:10:14:01 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:45:17 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 03:45:28 PM] info: 	::1 - - [12/Aug/2025:10:15:28 +0000] "POST /api/auth/login HTTP/1.1" 404 42 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:46:04 PM] info: 	::1 - - [12/Aug/2025:10:16:04 +0000] "POST /api/auth/login HTTP/1.1" 404 42 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:48:21 PM] info: 	::1 - - [12/Aug/2025:10:18:21 +0000] "POST /api/auth/login HTTP/1.1" 404 42 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:48:28 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 03:48:37 PM] info: 	User logged in: nivansh@gmail.com (Role: owner)
+[2025-08-12 03:48:37 PM] info: 	::1 - - [12/Aug/2025:10:18:37 +0000] "POST /api/auth/login HTTP/1.1" 200 346 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:49:31 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 03:49:44 PM] info: 	::1 - - [12/Aug/2025:10:19:44 +0000] "POST /api/auth/login HTTP/1.1" 403 90 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:51:46 PM] info: 	::1 - - [12/Aug/2025:10:21:46 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:52:10 PM] warn: 	Login failed - User not found: superadmin2@gmail.com
+[2025-08-12 03:52:10 PM] info: 	::1 - - [12/Aug/2025:10:22:10 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:52:52 PM] info: 	::1 - - [12/Aug/2025:10:22:52 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:54:31 PM] info: 	::1 - - [12/Aug/2025:10:24:31 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:54:50 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 03:56:17 PM] info: 	::1 - - [12/Aug/2025:10:26:17 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 03:59:42 PM] info: 	::1 - - [12/Aug/2025:10:29:42 +0000] "POST /api/auth/login HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 04:05:48 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 04:06:32 PM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-12 04:06:32 PM] info: 	::1 - - [12/Aug/2025:10:36:32 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 04:07:02 PM] info: 	::1 - - [12/Aug/2025:10:37:02 +0000] "POST /api/auth/login HTTP/1.1" 403 90 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 04:15:26 PM] info: 	::1 - - [12/Aug/2025:10:45:26 +0000] "POST /api/auth/login HTTP/1.1" 403 90 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 04:17:19 PM] info: 	::1 - - [12/Aug/2025:10:47:19 +0000] "POST /api/auth/login HTTP/1.1" 403 90 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 04:19:36 PM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-12 04:19:36 PM] info: 	::1 - - [12/Aug/2025:10:49:36 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 04:20:03 PM] info: 	::1 - - [12/Aug/2025:10:50:03 +0000] "POST /api/auth/login HTTP/1.1" 403 90 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 04:24:23 PM] info: 	::1 - - [12/Aug/2025:10:54:23 +0000] "POST /api/auth/login HTTP/1.1" 403 90 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 08:38:03 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-12 08:38:43 PM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-12 08:38:43 PM] info: 	::1 - - [12/Aug/2025:15:08:43 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 08:38:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 08:38:51 PM] info: 	::1 - - [12/Aug/2025:15:08:51 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 08:38:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 08:38:51 PM] info: 	::1 - - [12/Aug/2025:15:08:51 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:19:26 PM] info: 	::1 - - [12/Aug/2025:15:49:26 +0000] "POST /api/auth/login HTTP/1.1" 403 92 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:23:36 PM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-12 09:23:36 PM] info: 	::1 - - [12/Aug/2025:15:53:36 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:23:46 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 09:23:46 PM] info: 	::1 - - [12/Aug/2025:15:53:46 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 09:23:46 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 09:23:46 PM] info: 	::1 - - [12/Aug/2025:15:53:46 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 11:03:04 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 11:03:04 PM] info: 	::1 - - [12/Aug/2025:17:33:04 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-12 11:03:04 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-12 11:03:04 PM] info: 	::1 - - [12/Aug/2025:17:33:04 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:35:55 AM] info: 	Subscription scheduled jobs initialized
+[2025-08-14 11:00:33 AM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-14 11:00:33 AM] info: 	::1 - - [14/Aug/2025:05:30:33 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:00:40 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:00:40 AM] info: 	::1 - - [14/Aug/2025:05:30:40 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:00:40 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:00:40 AM] info: 	::1 - - [14/Aug/2025:05:30:40 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:04:27 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:04:27 AM] info: 	::1 - - [14/Aug/2025:05:34:27 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:04:27 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:04:28 AM] info: 	::1 - - [14/Aug/2025:05:34:28 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:04:34 AM] info: 	::1 - - [14/Aug/2025:05:34:34 +0000] "GET /api/tenants/689ab89274952dca6954b962/staff HTTP/1.1" 404 181 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:04:41 AM] info: 	::1 - - [14/Aug/2025:05:34:41 +0000] "GET /api/tenants/689ab89274952dca6954b962/staff HTTP/1.1" 404 181 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:04:54 AM] info: 	::1 - - [14/Aug/2025:05:34:54 +0000] "GET /api/tenants/689ab89274952dca6954b962/staff HTTP/1.1" 404 181 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:05:04 AM] info: 	::1 - - [14/Aug/2025:05:35:04 +0000] "GET /api/tenants/68932e8e12f2d42b9c73e4d1/staff HTTP/1.1" 404 181 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:11:45 AM] warn: 	No token provided
+[2025-08-14 11:11:45 AM] info: 	::1 - - [14/Aug/2025:05:41:45 +0000] "GET /api/tenants HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:11:45 AM] warn: 	No token provided
+[2025-08-14 11:11:45 AM] info: 	::1 - - [14/Aug/2025:05:41:45 +0000] "GET /api/tenants HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:11:52 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:11:53 AM] info: 	::1 - - [14/Aug/2025:05:41:53 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:11:53 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:11:53 AM] info: 	::1 - - [14/Aug/2025:05:41:53 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:14:18 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:14:18 AM] info: 	::1 - - [14/Aug/2025:05:44:18 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:14:20 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:14:20 AM] info: 	::1 - - [14/Aug/2025:05:44:20 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:14:20 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:14:20 AM] info: 	::1 - - [14/Aug/2025:05:44:20 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:17:07 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:17:07 AM] info: 	::1 - - [14/Aug/2025:05:47:07 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:17:32 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:17:32 AM] info: 	::1 - - [14/Aug/2025:05:47:32 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 11:17:40 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 11:17:40 AM] info: 	::1 - - [14/Aug/2025:05:47:40 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:01:31 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.73:27017
+[2025-08-14 12:01:31 PM] info: 	::1 - - [14/Aug/2025:06:31:31 +0000] "GET /api/tenants HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:01:51 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.73:27017
+[2025-08-14 12:01:51 PM] info: 	::1 - - [14/Aug/2025:06:31:51 +0000] "GET /api/tenants HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:24:25 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:24:25 PM] info: 	::1 - - [14/Aug/2025:06:54:25 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:24:41 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-14 12:24:53 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:24:54 PM] info: 	::1 - - [14/Aug/2025:06:54:54 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:24:54 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:24:54 PM] info: 	::1 - - [14/Aug/2025:06:54:54 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:25:14 PM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-14 12:25:14 PM] info: 	::1 - - [14/Aug/2025:06:55:14 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:25:17 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:25:17 PM] info: 	::1 - - [14/Aug/2025:06:55:17 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:25:17 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:25:17 PM] info: 	::1 - - [14/Aug/2025:06:55:17 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:29:31 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:29:31 PM] info: 	::1 - - [14/Aug/2025:06:59:31 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:32:08 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:32:08 PM] info: 	::1 - - [14/Aug/2025:07:02:08 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:35:31 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:35:31 PM] info: 	::1 - - [14/Aug/2025:07:05:31 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:35:31 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:35:31 PM] info: 	::1 - - [14/Aug/2025:07:05:31 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:35:53 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:35:53 PM] info: 	::1 - - [14/Aug/2025:07:05:53 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:36:36 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:36:36 PM] info: 	::1 - - [14/Aug/2025:07:06:36 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:36:44 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:36:44 PM] info: 	::1 - - [14/Aug/2025:07:06:44 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:36:44 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:36:44 PM] info: 	::1 - - [14/Aug/2025:07:06:44 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:41:22 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:41:22 PM] info: 	::1 - - [14/Aug/2025:07:11:22 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:41:22 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:41:22 PM] info: 	::1 - - [14/Aug/2025:07:11:22 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:46:38 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:46:38 PM] info: 	::1 - - [14/Aug/2025:07:16:38 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 12:46:38 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 12:46:38 PM] info: 	::1 - - [14/Aug/2025:07:16:38 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 02:02:48 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 02:02:48 PM] info: 	::1 - - [14/Aug/2025:08:32:48 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 02:02:48 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 02:02:48 PM] info: 	::1 - - [14/Aug/2025:08:32:48 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:31:06 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:31:06 PM] info: 	::1 - - [14/Aug/2025:10:01:06 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:31:06 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:31:07 PM] info: 	::1 - - [14/Aug/2025:10:01:07 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:31:50 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:31:50 PM] info: 	::1 - - [14/Aug/2025:10:01:50 +0000] "PUT /api/tenants/yoga HTTP/1.1" 200 751 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:32:13 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:32:14 PM] info: 	::1 - - [14/Aug/2025:10:02:14 +0000] "PUT /api/tenants/yoga HTTP/1.1" 200 758 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:32:27 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:32:27 PM] info: 	::1 - - [14/Aug/2025:10:02:27 +0000] "PUT /api/tenants/yoga HTTP/1.1" 200 759 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:36:33 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:36:33 PM] info: 	::1 - - [14/Aug/2025:10:06:33 +0000] "PUT /api/tenants/yoga HTTP/1.1" 200 757 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:36:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:36:58 PM] info: 	::1 - - [14/Aug/2025:10:06:58 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:36:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:36:58 PM] info: 	::1 - - [14/Aug/2025:10:06:58 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:37:01 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:37:01 PM] info: 	::1 - - [14/Aug/2025:10:07:01 +0000] "PUT /api/tenants/yoga HTTP/1.1" 200 759 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:37:06 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:37:06 PM] info: 	::1 - - [14/Aug/2025:10:07:06 +0000] "PUT /api/tenants/yoga HTTP/1.1" 200 757 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:38:45 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:38:45 PM] info: 	::1 - - [14/Aug/2025:10:08:45 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:38:45 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:38:45 PM] info: 	::1 - - [14/Aug/2025:10:08:45 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:43:30 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:43:30 PM] info: 	::1 - - [14/Aug/2025:10:13:30 +0000] "GET /api/users HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:43:30 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:43:30 PM] info: 	::1 - - [14/Aug/2025:10:13:30 +0000] "GET /api/users HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:44:07 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-14 03:44:13 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:44:13 PM] info: 	::1 - - [14/Aug/2025:10:14:13 +0000] "GET /api/users HTTP/1.1" 200 212 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:44:13 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:44:13 PM] info: 	::1 - - [14/Aug/2025:10:14:13 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:46:15 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:46:15 PM] info: 	::1 - - [14/Aug/2025:10:16:15 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:46:15 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:46:15 PM] info: 	::1 - - [14/Aug/2025:10:16:15 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:56:53 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:56:53 PM] info: 	::1 - - [14/Aug/2025:10:26:53 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:56:53 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:56:53 PM] info: 	::1 - - [14/Aug/2025:10:26:53 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 03:57:53 PM] error: 	Authentication error: jwt expired
+[2025-08-14 03:57:53 PM] info: 	::1 - - [14/Aug/2025:10:27:53 +0000] "GET /api/users HTTP/1.1" 401 29 "-" "PostmanRuntime/7.45.0"
+[2025-08-14 03:58:41 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 03:58:41 PM] info: 	::1 - - [14/Aug/2025:10:28:41 +0000] "GET /api/users HTTP/1.1" 200 212 "-" "PostmanRuntime/7.45.0"
+[2025-08-14 04:12:17 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-14 04:12:23 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 04:12:23 PM] info: 	::1 - - [14/Aug/2025:10:42:23 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 04:12:23 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 04:12:23 PM] info: 	::1 - - [14/Aug/2025:10:42:23 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 04:12:50 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 04:12:51 PM] info: 	::1 - - [14/Aug/2025:10:42:51 +0000] "GET /api/users HTTP/1.1" 200 212 "-" "PostmanRuntime/7.45.0"
+[2025-08-14 04:13:50 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 04:13:50 PM] info: 	::1 - - [14/Aug/2025:10:43:50 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 04:13:50 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 04:13:50 PM] info: 	::1 - - [14/Aug/2025:10:43:50 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 04:14:53 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-14 04:14:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 04:14:58 PM] info: 	::1 - - [14/Aug/2025:10:44:58 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 04:14:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 04:14:58 PM] info: 	::1 - - [14/Aug/2025:10:44:58 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 05:45:33 PM] info: 	::1 - - [14/Aug/2025:12:15:33 +0000] "GET /api/users HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 05:46:02 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-14 06:29:56 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:29:56 PM] info: 	::1 - - [14/Aug/2025:12:59:56 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:29:56 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:29:56 PM] info: 	::1 - - [14/Aug/2025:12:59:56 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:30:36 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:30:36 PM] info: 	::1 - - [14/Aug/2025:13:00:36 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:30:36 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:30:36 PM] info: 	::1 - - [14/Aug/2025:13:00:36 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:36:30 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:36:30 PM] info: 	::1 - - [14/Aug/2025:13:06:30 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:36:31 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:36:31 PM] info: 	::1 - - [14/Aug/2025:13:06:31 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:36:38 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:36:38 PM] info: 	::1 - - [14/Aug/2025:13:06:38 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:36:38 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:36:39 PM] info: 	::1 - - [14/Aug/2025:13:06:39 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:36:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:36:51 PM] info: 	::1 - - [14/Aug/2025:13:06:51 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:36:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:36:51 PM] info: 	::1 - - [14/Aug/2025:13:06:51 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:36:56 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:36:56 PM] info: 	::1 - - [14/Aug/2025:13:06:56 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:36:57 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:36:57 PM] info: 	::1 - - [14/Aug/2025:13:06:57 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:37:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:37:51 PM] info: 	::1 - - [14/Aug/2025:13:07:51 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:37:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:37:51 PM] info: 	::1 - - [14/Aug/2025:13:07:51 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:37:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:37:58 PM] info: 	::1 - - [14/Aug/2025:13:07:58 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:37:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:37:58 PM] info: 	::1 - - [14/Aug/2025:13:07:58 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:38:02 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:38:02 PM] info: 	::1 - - [14/Aug/2025:13:08:02 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 06:38:02 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 06:38:02 PM] info: 	::1 - - [14/Aug/2025:13:08:02 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 07:35:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 07:35:51 PM] info: 	::1 - - [14/Aug/2025:14:05:51 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 07:35:52 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 07:35:52 PM] info: 	::1 - - [14/Aug/2025:14:05:52 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:11:41 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-14 08:11:41 PM] info: 	::1 - - [14/Aug/2025:14:41:41 +0000] "GET /api/tenants HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:12:01 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-14 08:12:01 PM] info: 	::1 - - [14/Aug/2025:14:42:01 +0000] "GET /api/tenants HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:20:27 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-14 08:20:37 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:20:37 PM] info: 	::1 - - [14/Aug/2025:14:50:37 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:20:37 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:20:37 PM] info: 	::1 - - [14/Aug/2025:14:50:37 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:25:01 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:25:01 PM] info: 	::1 - - [14/Aug/2025:14:55:01 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:25:01 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:25:01 PM] info: 	::1 - - [14/Aug/2025:14:55:01 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:25:21 PM] error: 	Authentication error: jwt expired
+[2025-08-14 08:25:21 PM] info: 	::1 - - [14/Aug/2025:14:55:21 +0000] "GET /api/users HTTP/1.1" 401 29 "-" "PostmanRuntime/7.45.0"
+[2025-08-14 08:26:29 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-14 08:26:38 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:26:38 PM] info: 	::1 - - [14/Aug/2025:14:56:38 +0000] "GET /api/users HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:26:38 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:26:38 PM] info: 	::1 - - [14/Aug/2025:14:56:38 +0000] "GET /api/users HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:29:18 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-14 08:29:21 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:29:21 PM] info: 	::1 - - [14/Aug/2025:14:59:21 +0000] "GET /api/users HTTP/1.1" 200 4318 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:29:21 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:29:21 PM] info: 	::1 - - [14/Aug/2025:14:59:21 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:29:47 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:29:47 PM] info: 	::1 - - [14/Aug/2025:14:59:47 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:29:47 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:29:47 PM] info: 	::1 - - [14/Aug/2025:14:59:47 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:29:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:29:51 PM] info: 	::1 - - [14/Aug/2025:14:59:51 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 08:29:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 08:29:51 PM] info: 	::1 - - [14/Aug/2025:14:59:51 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:30:14 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:30:14 PM] info: 	::1 - - [14/Aug/2025:16:00:14 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:30:14 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:30:14 PM] info: 	::1 - - [14/Aug/2025:16:00:14 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:30:34 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:30:34 PM] info: 	::1 - - [14/Aug/2025:16:00:34 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:30:34 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:30:34 PM] info: 	::1 - - [14/Aug/2025:16:00:34 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:30:48 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:30:48 PM] info: 	::1 - - [14/Aug/2025:16:00:48 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:30:48 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:30:48 PM] info: 	::1 - - [14/Aug/2025:16:00:48 +0000] "GET /api/tenants HTTP/1.1" 200 9492 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:31:04 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:31:04 PM] info: 	::1 - - [14/Aug/2025:16:01:04 +0000] "PUT /api/tenants/yoga HTTP/1.1" 200 750 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:31:24 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:31:24 PM] info: 	::1 - - [14/Aug/2025:16:01:24 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-14 09:31:24 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-14 09:31:24 PM] info: 	::1 - - [14/Aug/2025:16:01:24 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:27:21 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 02:37:09 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 02:37:40 PM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-16 02:37:40 PM] info: 	::1 - - [16/Aug/2025:09:07:40 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:37:44 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:37:44 PM] info: 	::1 - - [16/Aug/2025:09:07:44 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:37:44 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:37:44 PM] info: 	::1 - - [16/Aug/2025:09:07:44 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:38:17 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:38:17 PM] info: 	::1 - - [16/Aug/2025:09:08:17 +0000] "PUT /api/tenants/yoga HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:40:07 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:40:07 PM] info: 	::1 - - [16/Aug/2025:09:10:07 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:40:15 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:40:15 PM] info: 	::1 - - [16/Aug/2025:09:10:15 +0000] "PUT /api/tenants/yoga HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:40:25 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:40:25 PM] info: 	::1 - - [16/Aug/2025:09:10:25 +0000] "PUT /api/tenants/yoga HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:40:27 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:40:27 PM] info: 	::1 - - [16/Aug/2025:09:10:27 +0000] "PUT /api/tenants/yoga HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:40:33 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:40:33 PM] info: 	::1 - - [16/Aug/2025:09:10:33 +0000] "PUT /api/tenants/yoga HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:40:51 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:40:51 PM] info: 	::1 - - [16/Aug/2025:09:10:51 +0000] "PUT /api/tenants/yoga HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:40:54 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:40:54 PM] info: 	::1 - - [16/Aug/2025:09:10:54 +0000] "PUT /api/tenants/yoga HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:42:06 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 02:42:12 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:42:12 PM] info: 	::1 - - [16/Aug/2025:09:12:12 +0000] "PUT /api/tenants/yoga HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:43:57 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:43:57 PM] info: 	::1 - - [16/Aug/2025:09:13:57 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:44:08 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:44:08 PM] info: 	::1 - - [16/Aug/2025:09:14:08 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:46:20 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 02:46:24 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:46:24 PM] info: 	::1 - - [16/Aug/2025:09:16:24 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:46:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:46:58 PM] info: 	::1 - - [16/Aug/2025:09:16:58 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:47:03 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:47:03 PM] info: 	::1 - - [16/Aug/2025:09:17:03 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:47:03 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:47:03 PM] info: 	::1 - - [16/Aug/2025:09:17:03 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:47:10 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:47:10 PM] info: 	::1 - - [16/Aug/2025:09:17:10 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:48:13 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:48:13 PM] info: 	::1 - - [16/Aug/2025:09:18:13 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:48:15 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:48:15 PM] info: 	::1 - - [16/Aug/2025:09:18:15 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:48:25 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:48:25 PM] info: 	::1 - - [16/Aug/2025:09:18:25 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:50:17 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 02:50:25 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:50:25 PM] info: 	::1 - - [16/Aug/2025:09:20:25 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:51:06 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:51:06 PM] info: 	::1 - - [16/Aug/2025:09:21:06 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 400 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:55:09 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 02:55:19 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:55:19 PM] info: 	::1 - - [16/Aug/2025:09:25:19 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 404 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:58:10 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:58:10 PM] info: 	::1 - - [16/Aug/2025:09:28:10 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:58:53 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 02:58:59 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:58:59 PM] info: 	::1 - - [16/Aug/2025:09:28:59 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 200 736 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:59:08 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:59:08 PM] info: 	::1 - - [16/Aug/2025:09:29:08 +0000] "GET /api/users HTTP/1.1" 200 212 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:59:09 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:59:09 PM] info: 	::1 - - [16/Aug/2025:09:29:09 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:59:14 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:59:14 PM] info: 	::1 - - [16/Aug/2025:09:29:14 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:59:14 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:59:14 PM] info: 	::1 - - [16/Aug/2025:09:29:14 +0000] "GET /api/tenants HTTP/1.1" 200 9486 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:59:39 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:59:39 PM] info: 	::1 - - [16/Aug/2025:09:29:39 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 200 735 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 02:59:50 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 02:59:50 PM] info: 	::1 - - [16/Aug/2025:09:29:50 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 200 735 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:08 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:08 PM] info: 	::1 - - [16/Aug/2025:09:30:08 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 200 735 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:10 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:11 PM] info: 	::1 - - [16/Aug/2025:09:30:11 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:11 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:11 PM] info: 	::1 - - [16/Aug/2025:09:30:11 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:20 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:20 PM] info: 	::1 - - [16/Aug/2025:09:30:20 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:20 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:20 PM] info: 	::1 - - [16/Aug/2025:09:30:20 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:23 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:23 PM] info: 	::1 - - [16/Aug/2025:09:30:23 +0000] "PUT /api/tenants/yoga HTTP/1.1" 500 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:26 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:26 PM] info: 	::1 - - [16/Aug/2025:09:30:26 +0000] "PUT /api/tenants/yoga HTTP/1.1" 500 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:45 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:45 PM] info: 	::1 - - [16/Aug/2025:09:30:45 +0000] "PUT /api/tenants/yoga HTTP/1.1" 500 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:00:59 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:00:59 PM] info: 	::1 - - [16/Aug/2025:09:30:59 +0000] "PUT /api/tenants/ironfit HTTP/1.1" 500 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:06:03 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:06:03 PM] info: 	::1 - - [16/Aug/2025:09:36:03 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:06:03 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:06:03 PM] info: 	::1 - - [16/Aug/2025:09:36:03 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:06:06 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:06:06 PM] info: 	::1 - - [16/Aug/2025:09:36:06 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:06:06 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:06:06 PM] info: 	::1 - - [16/Aug/2025:09:36:06 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:06:13 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:06:13 PM] info: 	::1 - - [16/Aug/2025:09:36:13 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:06:13 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:06:13 PM] info: 	::1 - - [16/Aug/2025:09:36:13 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:13:25 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 03:13:55 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:13:55 PM] info: 	::1 - - [16/Aug/2025:09:43:55 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:13:56 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:13:56 PM] info: 	::1 - - [16/Aug/2025:09:43:56 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:13:59 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:13:59 PM] info: 	::1 - - [16/Aug/2025:09:43:59 +0000] "GET /api/users HTTP/1.1" 400 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:13:59 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:13:59 PM] info: 	::1 - - [16/Aug/2025:09:43:59 +0000] "GET /api/users HTTP/1.1" 400 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:32:26 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:32:26 PM] info: 	::1 - - [16/Aug/2025:10:02:26 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:32:26 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:32:27 PM] info: 	::1 - - [16/Aug/2025:10:02:27 +0000] "GET /api/tenants HTTP/1.1" 200 9485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:32:44 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:32:45 PM] info: 	::1 - - [16/Aug/2025:10:02:45 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 500 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:32:50 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:32:50 PM] info: 	::1 - - [16/Aug/2025:10:02:50 +0000] "PUT /api/tenants/689ab89274952dca6954b962 HTTP/1.1" 200 735 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:56:24 PM] error: 	Authentication error: jwt expired
+[2025-08-16 03:56:24 PM] info: 	::1 - - [16/Aug/2025:10:26:24 +0000] "GET /api/users HTTP/1.1" 401 29 "-" "PostmanRuntime/7.45.0"
+[2025-08-16 03:57:07 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:57:07 PM] info: 	::1 - - [16/Aug/2025:10:27:07 +0000] "GET /api/users HTTP/1.1" 400 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 03:57:08 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 03:57:08 PM] info: 	::1 - - [16/Aug/2025:10:27:08 +0000] "GET /api/users HTTP/1.1" 400 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 05:11:40 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 05:11:40 PM] info: 	::1 - - [16/Aug/2025:11:41:40 +0000] "GET /api/users HTTP/1.1" 400 53 "-" "PostmanRuntime/7.45.0"
+[2025-08-16 05:13:50 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 05:13:56 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 05:13:56 PM] info: 	::1 - - [16/Aug/2025:11:43:56 +0000] "GET /api/users HTTP/1.1" 500 40 "-" "PostmanRuntime/7.45.0"
+[2025-08-16 06:05:20 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-01.rkmvp.mongodb.net
+[2025-08-16 06:05:20 PM] info: 	::1 - - [16/Aug/2025:12:35:20 +0000] "GET /api/users HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 06:05:40 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.73:27017
+[2025-08-16 06:05:40 PM] info: 	::1 - - [16/Aug/2025:12:35:40 +0000] "GET /api/users HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 06:06:24 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 06:06:49 PM] info: 	Subscription scheduled jobs initialized
+[2025-08-16 06:06:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 06:06:58 PM] info: 	::1 - - [16/Aug/2025:12:36:58 +0000] "GET /api/users HTTP/1.1" 200 1990 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 06:06:58 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 06:06:58 PM] info: 	::1 - - [16/Aug/2025:12:36:58 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 06:07:08 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 06:07:08 PM] info: 	::1 - - [16/Aug/2025:12:37:08 +0000] "GET /api/users HTTP/1.1" 200 1990 "-" "PostmanRuntime/7.45.0"
+[2025-08-16 06:15:17 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 06:15:17 PM] info: 	::1 - - [16/Aug/2025:12:45:17 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 06:15:20 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 06:15:20 PM] info: 	::1 - - [16/Aug/2025:12:45:20 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 06:15:20 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 06:15:21 PM] info: 	::1 - - [16/Aug/2025:12:45:21 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 10:31:19 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 10:31:19 PM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-16 10:31:19 PM] info: 	::1 - - [16/Aug/2025:17:01:19 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-16 10:31:19 PM] info: 	::1 - - [16/Aug/2025:17:01:19 +0000] "GET /api/users HTTP/1.1" 200 1990 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-17 01:43:38 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-17 01:43:38 AM] info: 	::1 - - [16/Aug/2025:20:13:38 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-17 01:43:38 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-17 01:43:38 AM] info: 	::1 - - [16/Aug/2025:20:13:38 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
