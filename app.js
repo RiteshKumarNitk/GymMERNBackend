@@ -33,6 +33,7 @@ app.use('/api/tenants', require('./routes/tenantRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/members', require('./routes/memberRoutes'));
 app.use('/api/subscriptions', require('./routes/subscriptionRoutes'));
+app.use('/api/plans', require('./routes/planRoutes'));
 
 app.use('/api/superadmin', require('./routes/superadminRoutes'));
 app.use('/api/gym', require('./routes/gymRoutes'));
