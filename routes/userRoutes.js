@@ -15,7 +15,7 @@ router.post(
 router.get(
   '/', 
   auth,
-  roleGuard([ROLES.OWNER, ROLES.MANAGER]),
+  roleGuard([ROLES.SUPERADMIN,ROLES.OWNER, ROLES.MANAGER]),
   userController.getUsers
 );
 

@@ -39,7 +39,7 @@ app.use('/api/superadmin', require('./routes/superadminRoutes'));
 app.use('/api/gym', require('./routes/gymRoutes'));
 app.use('/api/setup', setupRoutes);
 app.use('/api/trainers', trainerRoutes);
-app.use('/api/members', memberRoutes);
+app.use('/api/members', memberRoutes);  
 
 // Error Handling Middleware
 const { logger } = require('./utils/logger');

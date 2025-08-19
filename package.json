@@ -19,6 +19,7 @@
     "jsonwebtoken": "^9.0.0",
     "lodash.isempty": "^4.4.0",
     "mongoose": "^7.0.3",
+    "mongoose-paginate-v2": "^1.9.1",
     "morgan": "^1.10.1",
     "node-cron": "^4.2.1",
     "pdfkit": "^0.17.1",
