@@ -7,7 +7,7 @@ Production-ready multi-tenant gym management system
 - Role-based access control (6 roles)
 - JWT authentication
 - MVC architecture
-- Scalable MongoDB schemas
+- Scalable MongoDB schemasss
 - Complete validation
 - Error handling middleware
 
