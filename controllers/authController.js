@@ -4,6 +4,7 @@ const User = require('../models/User');
 const { generateToken } = require('../utils/jwt');
 const { validateLoginInput } = require('../utils/validators');
 const { logger } = require('../utils/logger');
+const Tenant = require("../models/Tenant");
 
 exports.login = async (req, res) => {
   const { errors, isValid } = validateLoginInput(req.body);
@@ -22,6 +23,21 @@ exports.login = async (req, res) => {
       logger.warn(`Login failed - User not found: ${email}`);
       return res.status(401).json({ msg: 'Invalid credentials' });
     }
+
+    if (user.role !== 'superadmin') {
+  const tenant = await Tenant.findOne({ tenantId: user.tenantId });
+  if (!tenant) {
+    return res.status(404).json({ success: false, error: 'Tenant not found' });
+  }
+
+    // Check tenant status
+    if (tenant.status !== 'active') {
+      return res.status(403).json({
+        success: false,
+        message: 'Your gym account has been deactivated. Please contact support.',
+      });
+    }
+  }
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {

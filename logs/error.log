@@ -2,3 +2,15 @@
 [2025-07-23 10:58:38 PM] error: 	Trainer creation error: Cannot read properties of undefined (reading 'TRAINER')
 [2025-07-31 08:00:00 AM] error: 	Error in expiring subscriptions job
 [2025-07-31 08:05:44 AM] error: 	Authentication error: jwt malformed
+[2025-08-11 09:34:18 PM] error: 	Get tenants failed: Tenant.paginate is not a function
+[2025-08-11 09:34:18 PM] error: 	Get tenants failed: Tenant.paginate is not a function
+[2025-08-14 12:01:31 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.73:27017
+[2025-08-14 12:01:51 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.73:27017
+[2025-08-14 03:57:53 PM] error: 	Authentication error: jwt expired
+[2025-08-14 05:46:02 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-14 08:11:41 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-14 08:12:01 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-14 08:25:21 PM] error: 	Authentication error: jwt expired
+[2025-08-16 03:56:24 PM] error: 	Authentication error: jwt expired
+[2025-08-16 06:05:20 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-01.rkmvp.mongodb.net
+[2025-08-16 06:05:40 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.73:27017

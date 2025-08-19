@@ -114,49 +114,34 @@ exports.getTenants = async (req, res) => {
 // @desc    Update tenant
 // @route   PUT /api/tenants/:id
 // @access  Super Admin
+// @desc Update tenant
+// @route PUT /api/tenants/:id
+// controllers/tenantController.ts
+
+
+
 exports.updateTenant = async (req, res) => {
   try {
-    const updates = req.body;
-    const tenantId = req.params.id;
-    
-    // Validate allowed updates
-    const allowedUpdates = ['name', 'contactEmail', 'contactPhone', 'status', 'plan'];
-    const isValidUpdate = Object.keys(updates).every(update => 
-      allowedUpdates.includes(update)
-    );
-    
-    if (!isValidUpdate) {
-      return res.status(400).json({
-        success: false,
-        error: 'Invalid updates!'
-      });
-    }
-    
-    const tenant = await Tenant.findOneAndUpdate(
-      { tenantId },
-      updates,
+    const { id } = req.params;
+    const payload = req.body;
+
+    const updatedTenant = await Tenant.findByIdAndUpdate(
+      id,
+      { $set: payload },
       { new: true, runValidators: true }
     );
-    
-    if (!tenant) {
-      return res.status(404).json({
-        success: false,
-        error: 'Tenant not found'
-      });
+
+    if (!updatedTenant) {
+      return res.status(404).json({ error: "Tenant not found" });
     }
-    
-    res.json({
-      success: true,
-      data: tenant
-    });
-  } catch (err) {
-    logger.error(`Update tenant failed: ${err.message}`);
-    res.status(500).json({
-      success: false,
-      error: 'Server error'
-    });
+
+    res.json({ data: updatedTenant });
+  } catch (error) {
+    console.error("Update error:", error);
+    res.status(500).json({ error: "Server error while updating tenant" });
   }
 };
+
 
 // @desc    Delete tenant (archive)
 // @route   DELETE /api/tenants/:id
