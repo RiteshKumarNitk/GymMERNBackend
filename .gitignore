@@ -3,7 +3,7 @@ node_modules
 logs/error.log
 logs/mongo-slow.log
 
-# Logs
+# Logs s
 logs
 *.log
 npm-debug.log*
