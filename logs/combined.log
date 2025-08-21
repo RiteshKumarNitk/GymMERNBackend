@@ -765,3 +765,17 @@
 [2025-08-17 01:43:38 AM] info: 	::1 - - [16/Aug/2025:20:13:38 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 [2025-08-17 01:43:38 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
 [2025-08-17 01:43:38 AM] info: 	::1 - - [16/Aug/2025:20:13:38 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-08-21 07:53:54 AM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-21 07:53:54 AM] info: 	::1 - - [21/Aug/2025:02:23:54 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-08-21 07:57:30 AM] info: 	User logged in: superadmin2@example.com (Role: superadmin)
+[2025-08-21 07:57:30 AM] info: 	::1 - - [21/Aug/2025:02:27:30 +0000] "POST /api/auth/login HTTP/1.1" 200 369 "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+[2025-08-21 07:59:12 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-21 07:59:12 AM] info: 	::1 - - [21/Aug/2025:02:29:12 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-08-21 07:59:13 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-21 07:59:13 AM] info: 	::1 - - [21/Aug/2025:02:29:13 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-08-21 07:59:15 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-21 07:59:15 AM] info: 	::1 - - [21/Aug/2025:02:29:15 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-08-21 07:59:15 AM] info: 	Authenticated user: superadmin2@example.com (superadmin)
+[2025-08-21 07:59:15 AM] info: 	::1 - - [21/Aug/2025:02:29:15 +0000] "GET /api/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-08-21 08:00:00 AM] info: 	Running scheduled job: Check expiring subscriptions
+[2025-08-21 08:00:00 AM] error: 	Error in expiring subscriptions job

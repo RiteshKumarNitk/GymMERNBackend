@@ -40,8 +40,8 @@ const initSubscriptionJobs = () => {
       logger.error('Error in overdue invoices job', { error: error.message, stack: error.stack });
     }
   });
-
-  logger.info('Subscription scheduled jobs initialized');
+  console.log('Subscription scheduled jobs initialized')
+  // logger.info('Subscription scheduled jobs initialized');
 };
 
 module.exports = { initSubscriptionJobs };

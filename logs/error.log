@@ -14,3 +14,4 @@
 [2025-08-16 03:56:24 PM] error: 	Authentication error: jwt expired
 [2025-08-16 06:05:20 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-01.rkmvp.mongodb.net
 [2025-08-16 06:05:40 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.73:27017
+[2025-08-21 08:00:00 AM] error: 	Error in expiring subscriptions job
