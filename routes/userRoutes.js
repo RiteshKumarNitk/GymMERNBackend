@@ -19,4 +19,12 @@ router.get(
   userController.getUsers
 );
 
+
+router.get(
+  '/me',
+  auth, // token check karega
+  userController.getCurrentUser
+);
+
+
 module.exports = router;

@@ -1,2 +1,38 @@
 [2025-07-23 09:29:41 PM] error: 	Trainer creation failed: Cannot read properties of undefined (reading 'TRAINER')
 [2025-07-23 10:58:38 PM] error: 	Trainer creation error: Cannot read properties of undefined (reading 'TRAINER')
+[2025-07-30 09:33:40 PM] error: 	Authentication error: invalid signature
+[2025-07-30 09:33:40 PM] error: 	Authentication error: invalid signature
+[2025-07-31 05:17:03 PM] error: 	Authentication error: invalid signature
+[2025-07-31 05:17:03 PM] error: 	Authentication error: invalid signature
+[2025-08-01 11:24:55 PM] error: 	❌ MongoDB connection failed: querySrv ECONNREFUSED _mongodb._tcp.ekart.rkmvp.mongodb.net
+[2025-08-01 11:25:57 PM] error: 	❌ MongoDB connection failed: querySrv ETIMEOUT _mongodb._tcp.ekart.rkmvp.mongodb.net
+[2025-08-04 03:32:29 PM] error: 	Authentication error: invalid token
+[2025-08-04 03:34:53 PM] error: 	Authentication error: invalid token
+[2025-08-04 03:44:24 PM] error: 	Authentication error: invalid token
+[2025-08-04 03:44:33 PM] error: 	Authentication error: invalid token
+[2025-08-04 04:18:54 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.57:27017
+[2025-08-04 04:19:14 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.57:27017
+[2025-08-04 05:00:42 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-02.rkmvp.mongodb.net
+[2025-08-04 05:01:01 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.57:27017
+[2025-08-04 05:01:11 PM] error: 	Authentication error: connect ETIMEDOUT 159.41.243.57:27017
+[2025-08-05 10:09:52 AM] error: 	❌ MongoDB connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-08-14 05:44:32 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-02.rkmvp.mongodb.net
+[2025-08-14 05:45:46 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-02.rkmvp.mongodb.net
+[2025-08-14 05:46:06 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-02.rkmvp.mongodb.net
+[2025-08-20 02:46:44 PM] error: 	GET MEMBERS ERROR: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-23 04:06:40 PM] error: 	❌ MongoDB connection failed: querySrv ETIMEOUT _mongodb._tcp.ekart.rkmvp.mongodb.net
+[2025-08-23 06:12:51 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-01.rkmvp.mongodb.net
+[2025-08-23 06:12:57 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-01.rkmvp.mongodb.net
+[2025-08-23 06:13:06 PM] error: 	❌ MongoDB connection failed: querySrv ECONNREFUSED _mongodb._tcp.ekart.rkmvp.mongodb.net
+[2025-08-24 10:31:36 AM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-24 10:31:56 AM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-24 10:31:56 AM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-24 10:31:56 AM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-24 11:39:58 AM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-24 11:40:07 AM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-24 11:40:07 AM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-24 11:40:07 AM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-24 02:48:45 PM] error: 	Authentication error: getaddrinfo ENOTFOUND ekart-shard-00-00.rkmvp.mongodb.net
+[2025-08-27 06:13:19 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-08-27 06:13:34 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-08-27 06:13:35 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).

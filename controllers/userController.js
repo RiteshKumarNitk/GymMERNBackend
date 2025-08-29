@@ -87,6 +87,23 @@ exports.getUsers = async (req, res) => {
   }
 };
 
+exports.getCurrentUser = async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id)
+      .select('-password')
+      .populate('branch', 'name');
+
+    if (!user) {
+      return res.status(404).json({ msg: 'User not found' });
+    }
+
+    res.json({ success: true, data: user });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).json({ msg: 'Server error' });
+  }
+};
+
 // @desc    Get all users in the tenant
 // @route   GET /api/users
 // exports.getUsers = async (req, res) => {

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
 
 const MemberSchema = new mongoose.Schema({
   tenantId: {
@@ -16,10 +17,15 @@ const MemberSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  password: {
+    type: String,
+    required: true,
+    minlength: 6
+  },
   planType: {
     type: String,
     required: true,
-    enum: ['basic', 'premium', 'elite'] 
+    enum: ['basic', 'premium', 'elite']
   },
   assignedTrainer: {
     type: mongoose.Schema.Types.ObjectId,
@@ -31,6 +37,32 @@ const MemberSchema = new mongoose.Schema({
   },
   membershipEndDate: {
     type: Date
+  },
+  address: {
+    type: String,
+  },
+  dob: {
+    type: Date,
+  },
+  gender: {
+    type: String,
+    enum: ['male','female','others']
+  },
+  image: {
+    data: Buffer,
+    contentType: String
+  }
+});
+
+// Pre-save hook to hash password
+MemberSchema.pre('save', async function(next) {
+  if (!this.isModified('password')) return next();
+  try {
+    const salt = await bcrypt.genSalt(10);
+    this.password = await bcrypt.hash(this.password, salt);
+    next();
+  } catch (err) {
+    next(err);
   }
 });
 

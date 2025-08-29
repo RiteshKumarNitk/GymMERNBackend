@@ -1,63 +1,59 @@
 const Member = require('../models/Member');
 const User = require('../models/User');
-const ROLES = require('../config/roles');
-const { validateMemberInput } = require('../utils/validators');
-
 const WorkoutPlan = require('../models/WorkoutPlan');
+const ROLES = require('../config/roles');
 const { logger } = require('../utils/logger');
 
-
+// @desc Create a new member with image upload
 exports.createMember = async (req, res) => {
-  const { name, email, phone, planType, trainerId } = req.body;
+  const { name, email, phone, password, planType, trainerId, gender, dob, address } = req.body;
 
   try {
-    console.log('Request Body:', req.body); // Log incoming request
-    
-    // Basic validation
-    if (!name || !phone || !planType) {
-      console.log('Validation failed - missing fields');
-      return res.status(400).json({ 
+    if (!name || !phone || !planType || !password) {
+      return res.status(400).json({
         success: false,
-        error: 'Name, phone and plan type are required' 
+        error: 'Name, phone, plan type and password are required'
       });
     }
 
-    // Verify trainer exists if assigned
+    // Verify trainer exists if trainerId is given
     if (trainerId) {
-      console.log('Checking trainer:', trainerId);
       const trainer = await User.findOne({
         _id: trainerId,
         role: ROLES.TRAINER,
         tenantId: req.user.tenantId
       });
-      
+
       if (!trainer) {
-        console.log('Trainer not found');
-        return res.status(400).json({
-          success: false,
-          error: 'Trainer not found'
-        });
+        return res.status(400).json({ success: false, error: 'Trainer not found' });
       }
     }
 
-    // Create member
     const member = new Member({
       tenantId: req.user.tenantId,
       name,
       email,
       phone,
+      password, // will be hashed by schema pre-save hook
       planType,
+      address,
+      image: req.file
+        ? {
+            data: req.file.buffer,
+            contentType: req.file.mimetype
+          }
+        : undefined,
+      dob: dob ? new Date(dob) : null,
+      gender,
       assignedTrainer: trainerId || null,
       joinDate: new Date()
     });
 
     await member.save();
-    console.log('Member created:', member._id);
 
-    // Create default workout plan if trainer assigned
+    // Create workout plan if trainer assigned
     let workoutPlan = null;
     if (trainerId) {
-      console.log('Creating workout plan...');
       workoutPlan = new WorkoutPlan({
         memberId: member._id,
         trainerId,
@@ -66,19 +62,26 @@ exports.createMember = async (req, res) => {
         endDate: calculateEndDate(planType)
       });
       await workoutPlan.save();
-      console.log('Workout plan created:', workoutPlan._id);
     }
 
     res.status(201).json({
       success: true,
-      data: {
-        member,
-        workoutPlan
+      data: { 
+        member: {
+          _id: member._id,
+          name: member.name,
+          email: member.email,
+          phone: member.phone,
+          planType: member.planType,
+          gender: member.gender,
+          dob: member.dob,
+          address: member.address
+        },
+        workoutPlan 
       }
     });
-
   } catch (err) {
-    console.error('CREATE MEMBER ERROR:', err); // Detailed error log
+    logger.error(`CREATE MEMBER ERROR: ${err.message}`);
     res.status(500).json({
       success: false,
       error: 'Server error',
@@ -87,17 +90,60 @@ exports.createMember = async (req, res) => {
   }
 };
 
+// @desc Get all members
+exports.getMembers = async (req, res) => {
+  try {
+    let query = { tenantId: req.user.tenantId };
+    if (req.user.role === ROLES.TRAINER) {
+      query.assignedTrainer = req.user._id;
+    }
+
+    const members = await Member.find(query)
+      .select('-password') // hide password
+      .populate('assignedTrainer', 'name email')
+      .sort('-joinDate');
+
+    res.json({
+      success: true,
+      count: members.length,
+      data: members
+    });
+  } catch (err) {
+    logger.error(`GET MEMBERS ERROR: ${err.message}`);
+    res.status(500).json({ success: false, error: 'Server error' });
+  }
+};
+
+// @desc Get member image by ID
+exports.getMemberImage = async (req, res) => {
+  try {
+    const member = await Member.findById(req.params.id);
+    if (!member || !member.image || !member.image.data) {
+      return res.status(404).json({
+        success: false,
+        error: "Image not found"
+      });
+    }
+
+    res.set("Content-Type", member.image.contentType);
+    res.send(member.image.data);
+  } catch (err) {
+    logger.error(`GET MEMBER IMAGE ERROR: ${err.message}`);
+    res.status(500).json({ success: false, error: "Server error" });
+  }
+};
+
 // Helper functions
 function getDefaultPlan(planType) {
   const plans = {
     basic: [
-      { name: "Cardio", sets: 3, reps: "20 mins", days: ["Mon", "Wed", "Fri"] },
-      { name: "Bodyweight Exercises", sets: 3, reps: 12, days: ["Tue", "Thu"] }
+      { name: 'Cardio', sets: 3, reps: '20 mins', days: ['Mon', 'Wed', 'Fri'] },
+      { name: 'Bodyweight Exercises', sets: 3, reps: 12, days: ['Tue', 'Thu'] }
     ],
     premium: [
-      { name: "Strength Training", sets: 4, reps: 10, days: ["Mon", "Thu"] },
-      { name: "HIIT", sets: 3, reps: "15 mins", days: ["Tue", "Fri"] },
-      { name: "Yoga", sets: 1, reps: "30 mins", days: ["Wed"] }
+      { name: 'Strength Training', sets: 4, reps: 10, days: ['Mon', 'Thu'] },
+      { name: 'HIIT', sets: 3, reps: '15 mins', days: ['Tue', 'Fri'] },
+      { name: 'Yoga', sets: 1, reps: '30 mins', days: ['Wed'] }
     ]
   };
   return plans[planType] || plans.basic;
@@ -109,96 +155,3 @@ function calculateEndDate(planType) {
   date.setMonth(date.getMonth() + (durations[planType] || 1));
   return date;
 }
-
-
-exports.getMembers = async (req, res) => {
-  try {
-    // Basic query
-    let query = { tenantId: req.user.tenantId };
-
-    // Optional trainer filter
-    if (req.user.role === 'trainer') {
-      query.assignedTrainer = req.user._id;
-    }
-
-    const members = await Member.find(query)
-      .populate('assignedTrainer', 'name email')
-      .sort('-joinDate');
-
-    logger.info(`${members.length} members retrieved by ${req.user.email}`);
-    res.json({
-      success: true,
-      count: members.length,
-      data: members
-    });
-
-  } catch (err) {
-    logger.error(`Get members error: ${err.message}`);
-    res.status(500).json({ 
-      success: false,
-      error: 'Server error'
-    });
-  }
-};
-
-
-// @desc    Create a new member
-// @route   POST /api/members
-// @access  Private (FrontDesk, Manager, Owner)
-// exports.createMember = async (req, res) => {
-//   const { name, email, phone, plan, assignedTrainer } = req.body;
-  
-//   // Input validation
-//   const { errors, isValid } = validateMemberInput(req.body);
-//   if (!isValid) {
-//     logger.warn(`Member creation validation failed: ${JSON.stringify(errors)}`);
-//     return res.status(400).json(errors);
-//   }
-
-//   try {
-//     // Verify trainer exists if assigned
-//     if (assignedTrainer) {
-//       const trainerExists = await User.findOne({
-//         _id: assignedTrainer,
-//         tenantId: req.user.tenantId,
-//         role: 'trainer'
-//       });
-      
-//       if (!trainerExists) {
-//         logger.warn(`Trainer not found: ${assignedTrainer}`);
-//         return res.status(400).json({ msg: 'Assigned trainer not found' });
-//       }
-//     }
-
-//     // Create new member
-//     const member = new Member({
-//       tenantId: req.user.tenantId,
-//       name,
-//       email,
-//       phone,
-//       plan,
-//       assignedTrainer: assignedTrainer || null,
-//       joinDate: new Date()
-//     });
-
-//     await member.save();
-
-//     logger.info(`Member created: ${member.name} (${member._id}) by ${req.user.email}`);
-//     res.status(201).json({
-//       success: true,
-//       data: member
-//     });
-
-//   } catch (err) {
-//     logger.error(`Member creation error: ${err.message}`);
-//     res.status(500).json({ 
-//       success: false,
-//       error: 'Server error',
-//       details: process.env.NODE_ENV === 'development' ? err.message : undefined
-//     });
-//   }
-// };
-
-// @desc    Get all members
-// @route   GET /api/members
-// @access  Private (FrontDesk, Manager, Owner, Trainer)
