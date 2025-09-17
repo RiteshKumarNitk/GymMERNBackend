@@ -24,8 +24,8 @@ const auth = async (req, res, next) => {
     logger.info(`Authenticated user: ${user.email} (${user.role})`);
     next();
   } catch (err) {
-    logger.error(`Authentication error: ${err.message}`);
-    res.status(401).json({ msg: 'Please authenticate' });
+     logger.error(`Authentication error: ${err.message}, token: ${token}`);
+  res.status(401).json({ msg: 'Please authenticate', error: err.message });
   }
 };
 

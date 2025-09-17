@@ -46,6 +46,14 @@ router.put(
   tenantController.updateTenant
 );
 
+// Owner/Superadmin can update general profile info
+router.put(
+  '/:id/profile',
+  auth,
+  roleGuard([ROLES.SUPERADMIN, ROLES.OWNER]),
+  tenantController.updateTenantProfile
+);
+
 // Delete (archive) tenant
 // DELETE /api/tenants/:id
 // Access: Super Admin
