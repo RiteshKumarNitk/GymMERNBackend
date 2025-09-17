@@ -131,6 +131,12 @@ exports.getTenants = async (req, res) => {
 // @desc    Update tenant
 // @route   PUT /api/tenants/:id
 // @access  Super Admin
+// @desc Update tenant
+// @route PUT /api/tenants/:id
+// controllers/tenantController.ts
+
+
+
 exports.updateTenant = async (req, res) => {
   try {
     const { id } = req.params;

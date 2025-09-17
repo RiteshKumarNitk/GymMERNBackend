@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate-v2');
+
 
 // Reusable sub-schema for business hours
 const BusinessHoursSchema = new mongoose.Schema({
@@ -106,5 +108,8 @@ const TenantSchema = new mongoose.Schema({
 TenantSchema.index({ tenantId: 1 });
 TenantSchema.index({ domain: 1 });
 TenantSchema.index({ status: 1 });
+
+module.exports = mongoose.model('Tenant', TenantSchema);
+TenantSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('Tenant', TenantSchema);
