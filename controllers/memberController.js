@@ -133,6 +133,35 @@ exports.getMemberImage = async (req, res) => {
   }
 };
 
+exports.updateBMI = async (req, res) => {
+  try {
+    const { bmi } = req.body;
+
+    // ✅ fix for BMI 0
+    if (bmi === undefined || bmi === null) {
+      return res.status(400).json({ success: false, error: "BMI is required" });
+    }
+
+    // Update member
+    const member = await Member.findOneAndUpdate(
+      { _id: req.user._id, tenantId: req.user.tenantId }, // make sure tenantId exists in JWT
+      { bmi },
+      { new: true }
+    ).select("-password");
+
+    if (!member) {
+      return res.status(404).json({ success: false, error: "Member not found" });
+    }
+
+    res.json({ success: true, data: member });
+  } catch (err) {
+    logger.error(`UPDATE BMI ERROR: ${err.message}`);
+    res.status(500).json({ success: false, error: "Server error" });
+  }
+};
+
+
+
 // Helper functions
 function getDefaultPlan(planType) {
   const plans = {

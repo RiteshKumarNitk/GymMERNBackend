@@ -195,3 +195,71 @@
 [2025-08-27 06:59:18 PM] warn: 	Login failed - User not found: nitishpathak213@gmail.com
 [2025-08-28 09:39:41 PM] warn: 	Login failed - User not found: john@fitlife.com
 [2025-08-28 09:40:12 PM] warn: 	Login failed - User not found: john@fitlife.com
+[2025-08-30 06:56:06 PM] warn: 	Login failed - User not found: john@fitlife.com
+[2025-08-30 06:56:25 PM] warn: 	Login failed - User not found: john@fitlife.com
+[2025-09-02 12:54:35 PM] warn: 	Login failed - User not found: john@fitlife.com
+[2025-09-02 04:52:05 PM] warn: 	No token provided
+[2025-09-02 04:52:05 PM] warn: 	No token provided
+[2025-09-02 04:52:13 PM] warn: 	No token provided
+[2025-09-02 04:52:13 PM] warn: 	No token provided
+[2025-09-02 04:52:15 PM] warn: 	No token provided
+[2025-09-02 04:52:15 PM] warn: 	No token provided
+[2025-09-02 04:52:17 PM] warn: 	No token provided
+[2025-09-02 04:52:17 PM] warn: 	No token provided
+[2025-09-02 04:52:21 PM] warn: 	No token provided
+[2025-09-02 04:52:21 PM] warn: 	No token provided
+[2025-09-02 04:52:49 PM] warn: 	No token provided
+[2025-09-02 04:52:49 PM] warn: 	No token provided
+[2025-09-02 04:52:51 PM] warn: 	No token provided
+[2025-09-02 04:52:51 PM] warn: 	No token provided
+[2025-09-02 04:53:22 PM] warn: 	No token provided
+[2025-09-02 04:53:22 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:15 PM] warn: 	No token provided
+[2025-09-02 04:56:32 PM] warn: 	No token provided
+[2025-09-02 04:56:50 PM] warn: 	No token provided
+[2025-09-02 04:57:35 PM] warn: 	No token provided
+[2025-09-02 04:57:42 PM] warn: 	No token provided
+[2025-09-02 05:06:54 PM] warn: 	Login failed - Incorrect password for user: nitishpathak203@gmail.com
+[2025-09-02 05:26:50 PM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-02 05:27:29 PM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-02 05:41:17 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:17 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:18 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:35 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:36 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:36 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:37 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:38 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:39 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:42:17 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:42:18 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:42:19 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:44:57 PM] error: 	CREATE MEMBER ERROR: connection 2 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:58 PM] error: 	CREATE MEMBER ERROR: connection 1 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:58 PM] error: 	CREATE MEMBER ERROR: connection 5 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:58 PM] error: 	CREATE MEMBER ERROR: connection 3 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:58 PM] error: 	CREATE MEMBER ERROR: connection 4 to 159.41.243.73:27017 closed
+[2025-09-03 12:29:30 AM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-03 12:30:10 AM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-03 12:30:33 AM] warn: 	Login failed - Incorrect password for nik@example.com
+[2025-09-13 08:32:27 AM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-13 09:59:33 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:00:49 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:01:06 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:04:27 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:43:09 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:50:22 AM] warn: 	Invalid token - user not found
+[2025-09-13 12:02:52 PM] warn: 	Invalid token - user not found
+[2025-09-13 12:13:03 PM] warn: 	Invalid token - user not found
+[2025-09-13 12:13:05 PM] warn: 	Invalid token - user not found
+[2025-09-13 04:44:01 PM] warn: 	Invalid token - user not found
+[2025-09-13 04:44:28 PM] warn: 	Invalid token - user not found
+[2025-09-20 08:55:34 PM] error: 	❌ MongoDB connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-09-20 08:56:32 PM] error: 	❌ MongoDB connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/

@@ -35,4 +35,13 @@ router.get(
   memberController.getMemberImage
 );
 
+// Update BMI for logged-in member
+router.put(
+  "/bmi",
+  auth,
+  roleGuard([ROLES.MEMBER, ROLES.FRONTDESK, ROLES.MANAGER, ROLES.OWNER]), // allow member themselves + staff
+  memberController.updateBMI
+);
+
+
 module.exports = router;

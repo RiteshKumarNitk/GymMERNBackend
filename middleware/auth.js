@@ -1,27 +1,34 @@
-// middleware/auth.js
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const Member = require('../models/Member');
 const { logger } = require('../utils/logger');
 
 const auth = async (req, res, next) => {
   try {
     const token = req.header('Authorization')?.replace('Bearer ', '');
-    
     if (!token) {
       logger.warn('No token provided');
       return res.status(401).json({ msg: 'No token provided' });
     }
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    const user = await User.findById(decoded.id).select('-password');
 
-    if (!user) {
-      logger.warn('Invalid token - user not found');
-      return res.status(401).json({ msg: 'Invalid token' });
+    let user = await User.findById(decoded.id).select('-password');
+    if (user) {
+      req.user = user;
+      req.isMember = false;
+      logger.info(`Authenticated: ${user.email} (User)`);
+    } else {
+      const member = await Member.findById(decoded.id).select('-password');
+      if (!member) {
+        logger.warn('Invalid token - user not found');
+        return res.status(401).json({ msg: 'Invalid token' });
+      }
+      req.user = member;
+      req.isMember = true; // ✅ important
+      logger.info(`Authenticated: ${member.email} (Member)`);
     }
 
-    req.user = user; // This attaches the user to the request
-    logger.info(`Authenticated user: ${user.email} (${user.role})`);
     next();
   } catch (err) {
     logger.error(`Authentication error: ${err.message}`);

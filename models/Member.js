@@ -51,6 +51,10 @@ const MemberSchema = new mongoose.Schema({
   image: {
     data: Buffer,
     contentType: String
+  },
+  bmi: {
+    type: Number,
+    default: null
   }
 });
 

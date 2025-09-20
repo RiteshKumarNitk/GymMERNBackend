@@ -1,73 +1,82 @@
 const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const User = require('../models/User');
 const { generateToken } = require('../utils/jwt');
 const { validateLoginInput } = require('../utils/validators');
 const { logger } = require('../utils/logger');
 
+// MODELS
+const User = require('../models/User');
+const Member = require('../models/Member');
+
 exports.login = async (req, res) => {
   const { errors, isValid } = validateLoginInput(req.body);
 
-  console.log("Request Body:", req.body); // Debug request input
-
   if (!isValid) {
-    console.log("Validation Errors:", errors); // Debug validation failure
     logger.warn(`Login validation failed: ${JSON.stringify(errors)}`);
     return res.status(400).json(errors);
   }
 
   const { email, password } = req.body;
-  console.log("Attempting login for:", email); // Debug email input
-
   try {
-    const user = await User.findOne({ email }).select('+password');
-    console.log("User Found:", !!user); // Show whether user was found
+    // 🔍 First check User model
+    let account = await User.findOne({ email }).select('+password');
+    let accountType = 'USER';
 
-    if (!user) {
-      logger.warn(`Login failed - User not found: ${email}`);
+    // 🔍 If not found, check Member model
+    if (!account) {
+      account = await Member.findOne({ email }).select('+password');
+      accountType = 'MEMBER';
+    }
+
+    // ❌ Not found
+    if (!account) {
+      logger.warn(`Login failed - Account not found: ${email}`);
       return res.status(401).json({ msg: 'Invalid credentials' });
     }
 
-    const isMatch = await bcrypt.compare(password, user.password);
-    console.log("Password Match:", isMatch); // Show if password matched
-
+    // 🔑 Validate password
+    const isMatch = await bcrypt.compare(password, account.password);
     if (!isMatch) {
-      logger.warn(`Login failed - Incorrect password for user: ${email}`);
+      logger.warn(`Login failed - Incorrect password for ${email}`);
       return res.status(401).json({ msg: 'Invalid credentials' });
     }
 
+    // 🎟 Generate token
     const token = generateToken({
-      id: user._id,
-      email: user.email,
-      role: user.role,
-      tenantId: user.tenantId,
+      id: account._id,
+      email: account.email,
+      role: account.role || accountType, // fallback if role not in Member
+      tenantId: account.tenantId,
     });
 
-    console.log("Generated Token:", token); // Debug token output
-
-    logger.info(`User logged in: ${email} (Role: ${user.role})`);
+    logger.info(`Login success: ${email} (${accountType})`);
 
     res.json({
       token,
       user: {
-        id: user._id,
-        name: user.name,
-        email: user.email,
-        role: user.role,
-        tenantId: user.tenantId
-      }
+        id: account._id,
+        name: account.name,
+        email: account.email,
+        role: account.role || accountType,
+        tenantId: account.tenantId,
+      },
     });
   } catch (err) {
-    console.error("Login Error:", err); // Full error in console
     logger.error(`Login error for ${email}: ${err.message}`);
     res.status(500).send('Server error');
   }
 };
 
-
+// GET current logged-in account
 exports.getMe = async (req, res) => {
   try {
-    const user = await User.findById(req.user.id).select('-password');
+    // Try both User & Member
+    let user = await User.findById(req.user.id).select('-password');
+    if (!user) {
+      user = await Member.findById(req.user.id).select('-password');
+    }
+
+    if (!user) return res.status(404).json({ msg: 'Account not found' });
+
     res.json(user);
   } catch (err) {
     logger.error(`GetMe error: ${err.message}`);

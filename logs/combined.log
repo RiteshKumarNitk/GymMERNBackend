@@ -4473,3 +4473,737 @@
 [2025-08-28 09:41:00 PM] info: 	User logged in: john1@fitlife.com (Role: owner)
 [2025-08-28 09:41:00 PM] info: 	::1 - - [28/Aug/2025:16:11:00 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
 [2025-08-28 09:41:12 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-08-30 06:56:06 PM] warn: 	Login failed - User not found: john@fitlife.com
+[2025-08-30 06:56:06 PM] info: 	::1 - - [30/Aug/2025:13:26:06 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-08-30 06:56:25 PM] warn: 	Login failed - User not found: john@fitlife.com
+[2025-08-30 06:56:25 PM] info: 	::1 - - [30/Aug/2025:13:26:25 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-08-30 06:57:15 PM] info: 	User logged in: john1@fitlife.com (Role: owner)
+[2025-08-30 06:57:15 PM] info: 	::1 - - [30/Aug/2025:13:27:15 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 12:54:35 PM] warn: 	Login failed - User not found: john@fitlife.com
+[2025-09-02 12:54:35 PM] info: 	::1 - - [02/Sep/2025:07:24:35 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 12:55:03 PM] info: 	User logged in: john1@fitlife.com (Role: owner)
+[2025-09-02 12:55:03 PM] info: 	::1 - - [02/Sep/2025:07:25:03 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 01:09:03 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 01:09:04 PM] info: 	::1 - - [02/Sep/2025:07:39:04 +0000] "POST /api/members HTTP/1.1" 201 278 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:45:05 PM] info: 	User logged in: john1@fitlife.com (Role: owner)
+[2025-09-02 04:45:05 PM] info: 	::1 - - [02/Sep/2025:11:15:05 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:05 PM] warn: 	No token provided
+[2025-09-02 04:52:05 PM] info: 	::1 - - [02/Sep/2025:11:22:05 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:05 PM] warn: 	No token provided
+[2025-09-02 04:52:05 PM] info: 	::1 - - [02/Sep/2025:11:22:05 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:13 PM] warn: 	No token provided
+[2025-09-02 04:52:13 PM] info: 	::1 - - [02/Sep/2025:11:22:13 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:13 PM] warn: 	No token provided
+[2025-09-02 04:52:13 PM] info: 	::1 - - [02/Sep/2025:11:22:13 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:15 PM] warn: 	No token provided
+[2025-09-02 04:52:15 PM] info: 	::1 - - [02/Sep/2025:11:22:15 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:15 PM] warn: 	No token provided
+[2025-09-02 04:52:15 PM] info: 	::1 - - [02/Sep/2025:11:22:15 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:17 PM] warn: 	No token provided
+[2025-09-02 04:52:17 PM] info: 	::1 - - [02/Sep/2025:11:22:17 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:17 PM] warn: 	No token provided
+[2025-09-02 04:52:17 PM] info: 	::1 - - [02/Sep/2025:11:22:17 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:21 PM] warn: 	No token provided
+[2025-09-02 04:52:21 PM] info: 	::1 - - [02/Sep/2025:11:22:21 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:21 PM] warn: 	No token provided
+[2025-09-02 04:52:21 PM] info: 	::1 - - [02/Sep/2025:11:22:21 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:49 PM] warn: 	No token provided
+[2025-09-02 04:52:49 PM] info: 	::1 - - [02/Sep/2025:11:22:49 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:49 PM] warn: 	No token provided
+[2025-09-02 04:52:49 PM] info: 	::1 - - [02/Sep/2025:11:22:49 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:51 PM] warn: 	No token provided
+[2025-09-02 04:52:51 PM] info: 	::1 - - [02/Sep/2025:11:22:51 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:52:51 PM] warn: 	No token provided
+[2025-09-02 04:52:51 PM] info: 	::1 - - [02/Sep/2025:11:22:51 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:53:22 PM] warn: 	No token provided
+[2025-09-02 04:53:22 PM] info: 	::1 - - [02/Sep/2025:11:23:22 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:53:22 PM] warn: 	No token provided
+[2025-09-02 04:53:22 PM] info: 	::1 - - [02/Sep/2025:11:23:22 +0000] "GET /api/members HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:08 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:56:09 PM] info: 	::1 - - [02/Sep/2025:11:26:09 +0000] "GET /api/members HTTP/1.1" 200 3859394 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] info: 	::1 - - [02/Sep/2025:11:26:09 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] info: 	::1 - - [02/Sep/2025:11:26:09 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] info: 	::1 - - [02/Sep/2025:11:26:09 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] info: 	::1 - - [02/Sep/2025:11:26:09 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] info: 	::1 - - [02/Sep/2025:11:26:09 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] info: 	::1 - - [02/Sep/2025:11:26:09 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:09 PM] warn: 	No token provided
+[2025-09-02 04:56:09 PM] info: 	::1 - - [02/Sep/2025:11:26:09 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:15 PM] warn: 	No token provided
+[2025-09-02 04:56:15 PM] info: 	::1 - - [02/Sep/2025:11:26:15 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:32 PM] warn: 	No token provided
+[2025-09-02 04:56:32 PM] info: 	::1 - - [02/Sep/2025:11:26:32 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:56:50 PM] warn: 	No token provided
+[2025-09-02 04:56:50 PM] info: 	::1 - - [02/Sep/2025:11:26:50 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:57:35 PM] warn: 	No token provided
+[2025-09-02 04:57:35 PM] info: 	::1 - - [02/Sep/2025:11:27:35 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:57:42 PM] warn: 	No token provided
+[2025-09-02 04:57:42 PM] info: 	::1 - - [02/Sep/2025:11:27:42 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 401 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:37 PM] info: 	::1 - - [02/Sep/2025:11:28:37 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:37 PM] info: 	::1 - - [02/Sep/2025:11:28:37 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 200 514749 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:37 PM] info: 	::1 - - [02/Sep/2025:11:28:37 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:37 PM] info: 	::1 - - [02/Sep/2025:11:28:37 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:38 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:38 PM] info: 	::1 - - [02/Sep/2025:11:28:38 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:38 PM] info: 	::1 - - [02/Sep/2025:11:28:38 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:38 PM] info: 	::1 - - [02/Sep/2025:11:28:38 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:38 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:38 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:38 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:38 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:38 PM] info: 	::1 - - [02/Sep/2025:11:28:38 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:39 PM] info: 	::1 - - [02/Sep/2025:11:28:39 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:39 PM] info: 	::1 - - [02/Sep/2025:11:28:39 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:39 PM] info: 	::1 - - [02/Sep/2025:11:28:39 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:39 PM] info: 	::1 - - [02/Sep/2025:11:28:39 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:39 PM] info: 	::1 - - [02/Sep/2025:11:28:39 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:39 PM] info: 	::1 - - [02/Sep/2025:11:28:39 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:40 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:40 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 04:58:40 PM] info: 	::1 - - [02/Sep/2025:11:28:40 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 04:58:40 PM] info: 	::1 - - [02/Sep/2025:11:28:40 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:25 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:26 PM] info: 	::1 - - [02/Sep/2025:11:30:26 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:27 PM] info: 	::1 - - [02/Sep/2025:11:30:27 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:27 PM] info: 	::1 - - [02/Sep/2025:11:30:27 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:27 PM] info: 	::1 - - [02/Sep/2025:11:30:27 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:28 PM] info: 	::1 - - [02/Sep/2025:11:30:28 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:28 PM] info: 	::1 - - [02/Sep/2025:11:30:28 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:28 PM] info: 	::1 - - [02/Sep/2025:11:30:28 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:29 PM] info: 	::1 - - [02/Sep/2025:11:30:29 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:30 PM] info: 	::1 - - [02/Sep/2025:11:30:30 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:30 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:30 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:30 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:30 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:30 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:30 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:31 PM] info: 	::1 - - [02/Sep/2025:11:30:31 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:31 PM] info: 	::1 - - [02/Sep/2025:11:30:31 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:31 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:31 PM] info: 	::1 - - [02/Sep/2025:11:30:31 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:32 PM] info: 	::1 - - [02/Sep/2025:11:30:32 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:32 PM] info: 	::1 - - [02/Sep/2025:11:30:32 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:32 PM] info: 	::1 - - [02/Sep/2025:11:30:32 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:32 PM] info: 	::1 - - [02/Sep/2025:11:30:32 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:32 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:33 PM] info: 	::1 - - [02/Sep/2025:11:30:33 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:33 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:33 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:33 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:33 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:33 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:33 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:34 PM] info: 	::1 - - [02/Sep/2025:11:30:34 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:34 PM] info: 	::1 - - [02/Sep/2025:11:30:34 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:34 PM] info: 	::1 - - [02/Sep/2025:11:30:34 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:34 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:34 PM] info: 	::1 - - [02/Sep/2025:11:30:34 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:34 PM] info: 	::1 - - [02/Sep/2025:11:30:34 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:35 PM] info: 	::1 - - [02/Sep/2025:11:30:35 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:35 PM] info: 	::1 - - [02/Sep/2025:11:30:35 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:39 PM] info: 	::1 - - [02/Sep/2025:11:30:39 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:39 PM] info: 	::1 - - [02/Sep/2025:11:30:39 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:40 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:40 PM] info: 	::1 - - [02/Sep/2025:11:30:40 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:40 PM] info: 	::1 - - [02/Sep/2025:11:30:40 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:40 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:41 PM] info: 	::1 - - [02/Sep/2025:11:30:41 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:41 PM] info: 	::1 - - [02/Sep/2025:11:30:41 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:41 PM] info: 	::1 - - [02/Sep/2025:11:30:41 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:41 PM] info: 	::1 - - [02/Sep/2025:11:30:41 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:42 PM] info: 	::1 - - [02/Sep/2025:11:30:42 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:42 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:42 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:42 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:42 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:42 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:42 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:42 PM] info: 	::1 - - [02/Sep/2025:11:30:42 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:42 PM] info: 	::1 - - [02/Sep/2025:11:30:42 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:42 PM] info: 	::1 - - [02/Sep/2025:11:30:42 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:42 PM] info: 	::1 - - [02/Sep/2025:11:30:42 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:42 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:42 PM] info: 	::1 - - [02/Sep/2025:11:30:42 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:43 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:43 PM] info: 	::1 - - [02/Sep/2025:11:30:43 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:43 PM] info: 	::1 - - [02/Sep/2025:11:30:43 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:45 PM] info: 	::1 - - [02/Sep/2025:11:30:45 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:45 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:45 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:45 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:45 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:45 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:45 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:46 PM] info: 	::1 - - [02/Sep/2025:11:30:46 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:46 PM] info: 	::1 - - [02/Sep/2025:11:30:46 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:46 PM] info: 	::1 - - [02/Sep/2025:11:30:46 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:46 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:46 PM] info: 	::1 - - [02/Sep/2025:11:30:46 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:46 PM] info: 	::1 - - [02/Sep/2025:11:30:46 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:46 PM] info: 	::1 - - [02/Sep/2025:11:30:46 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:46 PM] info: 	::1 - - [02/Sep/2025:11:30:46 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:46 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:49 PM] info: 	::1 - - [02/Sep/2025:11:30:49 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:49 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:49 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:49 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:49 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:49 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:49 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:49 PM] info: 	::1 - - [02/Sep/2025:11:30:49 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:50 PM] info: 	::1 - - [02/Sep/2025:11:30:50 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:50 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:51 PM] info: 	::1 - - [02/Sep/2025:11:30:51 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:51 PM] info: 	::1 - - [02/Sep/2025:11:30:51 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:51 PM] info: 	::1 - - [02/Sep/2025:11:30:51 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:51 PM] info: 	::1 - - [02/Sep/2025:11:30:51 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:52 PM] info: 	::1 - - [02/Sep/2025:11:30:52 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:52 PM] info: 	::1 - - [02/Sep/2025:11:30:52 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:52 PM] info: 	::1 - - [02/Sep/2025:11:30:52 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:52 PM] info: 	::1 - - [02/Sep/2025:11:30:52 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:52 PM] info: 	::1 - - [02/Sep/2025:11:30:52 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:52 PM] info: 	::1 - - [02/Sep/2025:11:30:52 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:52 PM] info: 	::1 - - [02/Sep/2025:11:30:52 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:53 PM] info: 	::1 - - [02/Sep/2025:11:30:53 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:53 PM] info: 	::1 - - [02/Sep/2025:11:30:53 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:54 PM] info: 	::1 - - [02/Sep/2025:11:30:54 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:54 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:54 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:54 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:54 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:54 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:54 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:54 PM] info: 	::1 - - [02/Sep/2025:11:30:54 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:54 PM] info: 	::1 - - [02/Sep/2025:11:30:54 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:54 PM] info: 	::1 - - [02/Sep/2025:11:30:54 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:55 PM] info: 	::1 - - [02/Sep/2025:11:30:55 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:55 PM] info: 	::1 - - [02/Sep/2025:11:30:55 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:55 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:00:55 PM] info: 	::1 - - [02/Sep/2025:11:30:55 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:00:55 PM] info: 	::1 - - [02/Sep/2025:11:30:55 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:03 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:05 PM] info: 	::1 - - [02/Sep/2025:11:31:05 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:06 PM] info: 	::1 - - [02/Sep/2025:11:31:06 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:06 PM] info: 	::1 - - [02/Sep/2025:11:31:06 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:06 PM] info: 	::1 - - [02/Sep/2025:11:31:06 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:07 PM] info: 	::1 - - [02/Sep/2025:11:31:07 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:07 PM] info: 	::1 - - [02/Sep/2025:11:31:07 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:07 PM] info: 	::1 - - [02/Sep/2025:11:31:07 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:07 PM] info: 	::1 - - [02/Sep/2025:11:31:07 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:18 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:19 PM] info: 	::1 - - [02/Sep/2025:11:31:19 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:19 PM] info: 	::1 - - [02/Sep/2025:11:31:19 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:19 PM] info: 	::1 - - [02/Sep/2025:11:31:19 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:19 PM] info: 	::1 - - [02/Sep/2025:11:31:19 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:01:19 PM] info: 	::1 - - [02/Sep/2025:11:31:19 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:19 PM] info: 	::1 - - [02/Sep/2025:11:31:19 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:19 PM] info: 	::1 - - [02/Sep/2025:11:31:19 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:01:20 PM] info: 	::1 - - [02/Sep/2025:11:31:20 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:26 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:27 PM] info: 	::1 - - [02/Sep/2025:11:32:27 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:27 PM] info: 	::1 - - [02/Sep/2025:11:32:27 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:27 PM] info: 	::1 - - [02/Sep/2025:11:32:27 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:27 PM] info: 	::1 - - [02/Sep/2025:11:32:27 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:28 PM] info: 	::1 - - [02/Sep/2025:11:32:28 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:28 PM] info: 	::1 - - [02/Sep/2025:11:32:28 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:28 PM] info: 	::1 - - [02/Sep/2025:11:32:28 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:28 PM] info: 	::1 - - [02/Sep/2025:11:32:28 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:33 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:36 PM] info: 	::1 - - [02/Sep/2025:11:32:36 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:37 PM] info: 	::1 - - [02/Sep/2025:11:32:37 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:37 PM] info: 	::1 - - [02/Sep/2025:11:32:37 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:37 PM] info: 	::1 - - [02/Sep/2025:11:32:37 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:38 PM] info: 	::1 - - [02/Sep/2025:11:32:38 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:38 PM] info: 	::1 - - [02/Sep/2025:11:32:38 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:38 PM] info: 	::1 - - [02/Sep/2025:11:32:38 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:38 PM] info: 	::1 - - [02/Sep/2025:11:32:38 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:45 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:47 PM] info: 	::1 - - [02/Sep/2025:11:32:47 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:47 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:47 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:47 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:47 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:47 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:47 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:47 PM] info: 	::1 - - [02/Sep/2025:11:32:47 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:47 PM] info: 	::1 - - [02/Sep/2025:11:32:47 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:47 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:02:48 PM] info: 	::1 - - [02/Sep/2025:11:32:48 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:48 PM] info: 	::1 - - [02/Sep/2025:11:32:48 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:48 PM] info: 	::1 - - [02/Sep/2025:11:32:48 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:48 PM] info: 	::1 - - [02/Sep/2025:11:32:48 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:02:48 PM] info: 	::1 - - [02/Sep/2025:11:32:48 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:03:01 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:03:02 PM] info: 	::1 - - [02/Sep/2025:11:33:02 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:03:02 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:03:02 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:03:02 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:03:02 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:03:02 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:03:02 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:03:02 PM] info: 	::1 - - [02/Sep/2025:11:33:02 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:03:02 PM] info: 	::1 - - [02/Sep/2025:11:33:02 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:03:02 PM] info: 	::1 - - [02/Sep/2025:11:33:02 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:03:02 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:03:02 PM] info: 	::1 - - [02/Sep/2025:11:33:02 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:03:03 PM] info: 	::1 - - [02/Sep/2025:11:33:03 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:03:03 PM] info: 	::1 - - [02/Sep/2025:11:33:03 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:03:03 PM] info: 	::1 - - [02/Sep/2025:11:33:03 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:05:15 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:03 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:04 PM] info: 	::1 - - [02/Sep/2025:11:36:04 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:04 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:04 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:04 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:04 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:04 PM] info: 	::1 - - [02/Sep/2025:11:36:04 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:04 PM] info: 	::1 - - [02/Sep/2025:11:36:04 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:05 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:05 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:05 PM] info: 	::1 - - [02/Sep/2025:11:36:05 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:05 PM] info: 	::1 - - [02/Sep/2025:11:36:05 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:05 PM] info: 	::1 - - [02/Sep/2025:11:36:05 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:05 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:05 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:05 PM] info: 	::1 - - [02/Sep/2025:11:36:05 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:05 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:05 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:05 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:05 PM] info: 	::1 - - [02/Sep/2025:11:36:05 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:05 PM] info: 	::1 - - [02/Sep/2025:11:36:05 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:05 PM] info: 	::1 - - [02/Sep/2025:11:36:05 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:05 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:06 PM] info: 	::1 - - [02/Sep/2025:11:36:06 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:06 PM] info: 	::1 - - [02/Sep/2025:11:36:06 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:06 PM] info: 	::1 - - [02/Sep/2025:11:36:06 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:06 PM] info: 	::1 - - [02/Sep/2025:11:36:06 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:06 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:06:06 PM] info: 	::1 - - [02/Sep/2025:11:36:06 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:06 PM] info: 	::1 - - [02/Sep/2025:11:36:06 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:06:54 PM] warn: 	Login failed - Incorrect password for user: nitishpathak203@gmail.com
+[2025-09-02 05:06:54 PM] info: 	::1 - - [02/Sep/2025:11:36:54 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:26:50 PM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-02 05:26:50 PM] info: 	::1 - - [02/Sep/2025:11:56:50 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:27:29 PM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-02 05:27:29 PM] info: 	::1 - - [02/Sep/2025:11:57:29 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:27:57 PM] info: 	Login success: john1@fitlife.com (USER)
+[2025-09-02 05:27:57 PM] info: 	::1 - - [02/Sep/2025:11:57:57 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:27:58 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:06 PM] info: 	::1 - - [02/Sep/2025:11:58:06 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:07 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:07 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:07 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:07 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:11 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:11 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:11 PM] info: 	::1 - - [02/Sep/2025:11:58:11 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:13 PM] info: 	::1 - - [02/Sep/2025:11:58:13 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:14 PM] info: 	::1 - - [02/Sep/2025:11:58:14 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:14 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:14 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:15 PM] info: 	::1 - - [02/Sep/2025:11:58:15 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:15 PM] info: 	::1 - - [02/Sep/2025:11:58:15 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:16 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:16 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:17 PM] info: 	::1 - - [02/Sep/2025:11:58:17 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:17 PM] info: 	::1 - - [02/Sep/2025:11:58:17 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:17 PM] info: 	::1 - - [02/Sep/2025:11:58:17 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:17 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:18 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:18 PM] info: 	::1 - - [02/Sep/2025:11:58:18 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:18 PM] info: 	::1 - - [02/Sep/2025:11:58:18 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:19 PM] info: 	::1 - - [02/Sep/2025:11:58:19 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:19 PM] info: 	::1 - - [02/Sep/2025:11:58:19 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:19 PM] info: 	::1 - - [02/Sep/2025:11:58:19 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:19 PM] info: 	::1 - - [02/Sep/2025:11:58:19 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:28:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:28:20 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:25 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:35 PM] info: 	::1 - - [02/Sep/2025:12:00:35 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:38 PM] info: 	::1 - - [02/Sep/2025:12:00:38 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:42 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:43 PM] info: 	::1 - - [02/Sep/2025:12:00:43 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 200 108029 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:45 PM] info: 	::1 - - [02/Sep/2025:12:00:45 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 200 231485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:46 PM] info: 	::1 - - [02/Sep/2025:12:00:46 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 200 231485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:47 PM] info: 	::1 - - [02/Sep/2025:12:00:47 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:47 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:49 PM] info: 	::1 - - [02/Sep/2025:12:00:49 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:50 PM] info: 	::1 - - [02/Sep/2025:12:00:50 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 200 514749 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:50 PM] info: 	::1 - - [02/Sep/2025:12:00:50 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:50 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:50 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:50 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:50 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:50 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:51 PM] info: 	::1 - - [02/Sep/2025:12:00:51 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:51 PM] info: 	::1 - - [02/Sep/2025:12:00:51 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:52 PM] info: 	::1 - - [02/Sep/2025:12:00:52 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:52 PM] info: 	::1 - - [02/Sep/2025:12:00:52 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:54 PM] info: 	::1 - - [02/Sep/2025:12:00:54 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:30:54 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:30:55 PM] info: 	::1 - - [02/Sep/2025:12:00:55 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:31:01 PM] info: 	::1 - - [02/Sep/2025:12:01:01 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:17 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:17 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:17 PM] info: 	::1 - - [02/Sep/2025:12:11:17 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:17 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:17 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:17 PM] info: 	::1 - - [02/Sep/2025:12:11:17 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:18 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:18 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:18 PM] info: 	::1 - - [02/Sep/2025:12:11:18 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:35 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:35 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:35 PM] info: 	::1 - - [02/Sep/2025:12:11:35 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:36 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:36 PM] info: 	::1 - - [02/Sep/2025:12:11:36 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:36 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:36 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:36 PM] info: 	::1 - - [02/Sep/2025:12:11:36 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:37 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:37 PM] info: 	::1 - - [02/Sep/2025:12:11:37 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:38 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:38 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:38 PM] info: 	::1 - - [02/Sep/2025:12:11:38 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:41:39 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:41:39 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:41:39 PM] info: 	::1 - - [02/Sep/2025:12:11:39 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:42:17 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:42:17 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:42:17 PM] info: 	::1 - - [02/Sep/2025:12:12:17 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:42:18 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:42:18 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:42:18 PM] info: 	::1 - - [02/Sep/2025:12:12:18 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:42:19 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:42:19 PM] error: 	CREATE MEMBER ERROR: Member validation failed: password: Path `password` (`1234`) is shorter than the minimum allowed length (6).
+[2025-09-02 05:42:19 PM] info: 	::1 - - [02/Sep/2025:12:12:19 +0000] "POST /api/members HTTP/1.1" 500 161 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:43:31 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:43:35 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:43:37 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:43:56 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:43:58 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:44:07 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:44:15 PM] info: 	::1 - - [02/Sep/2025:12:14:15 +0000] "POST /api/members HTTP/1.1" 201 255 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:44:16 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-02 05:44:57 PM] error: 	CREATE MEMBER ERROR: connection 2 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:57 PM] info: 	::1 - - [02/Sep/2025:12:14:57 +0000] "POST /api/members HTTP/1.1" 500 95 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:44:58 PM] error: 	CREATE MEMBER ERROR: connection 1 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:58 PM] info: 	::1 - - [02/Sep/2025:12:14:58 +0000] "POST /api/members HTTP/1.1" 500 95 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:44:58 PM] error: 	CREATE MEMBER ERROR: connection 5 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:58 PM] info: 	::1 - - [02/Sep/2025:12:14:58 +0000] "POST /api/members HTTP/1.1" 500 95 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:44:58 PM] error: 	CREATE MEMBER ERROR: connection 3 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:58 PM] info: 	::1 - - [02/Sep/2025:12:14:58 +0000] "POST /api/members HTTP/1.1" 500 95 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:44:58 PM] error: 	CREATE MEMBER ERROR: connection 4 to 159.41.243.73:27017 closed
+[2025-09-02 05:44:58 PM] info: 	::1 - - [02/Sep/2025:12:14:58 +0000] "POST /api/members HTTP/1.1" 500 95 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:45:10 PM] info: 	::1 - - [02/Sep/2025:12:15:10 +0000] "POST /api/members HTTP/1.1" 201 255 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 05:45:53 PM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-02 05:45:53 PM] info: 	::1 - - [02/Sep/2025:12:15:53 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:23:12 PM] info: 	::1 - - [02/Sep/2025:12:53:12 +0000] "GET /nutrition?food=egg HTTP/1.1" 404 148 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:23:16 PM] info: 	::1 - - [02/Sep/2025:12:53:16 +0000] "GET /nutrition?food=egg HTTP/1.1" 404 148 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:23:34 PM] info: 	::1 - - [02/Sep/2025:12:53:34 +0000] "GET /nutrition?food=egg HTTP/1.1" 404 148 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:30:40 PM] info: 	::1 - - [02/Sep/2025:13:00:40 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:30:52 PM] info: 	::1 - - [02/Sep/2025:13:00:52 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:31:21 PM] info: 	::1 - - [02/Sep/2025:13:01:21 +0000] "GET /nutrition?food=egg HTTP/1.1" 404 148 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:31:26 PM] info: 	::1 - - [02/Sep/2025:13:01:26 +0000] "GET /nutrition?food=egg HTTP/1.1" 404 148 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:34:20 PM] info: 	::1 - - [02/Sep/2025:13:04:20 +0000] "GET /nutrition?food=egg HTTP/1.1" 404 148 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:36:31 PM] info: 	::1 - - [02/Sep/2025:13:06:31 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:36:34 PM] info: 	::1 - - [02/Sep/2025:13:06:34 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:39:42 PM] info: 	::1 - - [02/Sep/2025:13:09:42 +0000] "GET /nutrition?food=egg HTTP/1.1" 404 148 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-02 06:39:50 PM] info: 	::1 - - [02/Sep/2025:13:09:50 +0000] "GET /nutrition?food=egg HTTP/1.1" 404 148 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-03 12:29:30 AM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-03 12:29:30 AM] info: 	::1 - - [02/Sep/2025:18:59:30 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-03 12:30:10 AM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-03 12:30:10 AM] info: 	::1 - - [02/Sep/2025:19:00:10 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-03 12:30:33 AM] warn: 	Login failed - Incorrect password for nik@example.com
+[2025-09-03 12:30:33 AM] info: 	::1 - - [02/Sep/2025:19:00:33 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-03 12:30:43 AM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-03 12:30:43 AM] info: 	::1 - - [02/Sep/2025:19:00:43 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-05 07:00:39 PM] info: 	Login success: john1@fitlife.com (USER)
+[2025-09-05 07:00:39 PM] info: 	::1 - - [05/Sep/2025:13:30:39 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-05 07:03:54 PM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-05 07:03:54 PM] info: 	::1 - - [05/Sep/2025:13:33:54 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-05 07:13:27 PM] info: 	Login success: john1@fitlife.com (USER)
+[2025-09-05 07:13:27 PM] info: 	::1 - - [05/Sep/2025:13:43:27 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-05 07:14:31 PM] info: 	Login success: riya.frontdesk@example.com (USER)
+[2025-09-05 07:14:31 PM] info: 	::1 - - [05/Sep/2025:13:44:31 +0000] "POST /api/auth/login HTTP/1.1" 200 403 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-05 07:15:39 PM] info: 	Authenticated user: riya.frontdesk@example.com (frontdesk)
+[2025-09-05 07:15:39 PM] info: 	::1 - - [05/Sep/2025:13:45:39 +0000] "POST /api/trainers HTTP/1.1" 400 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-05 07:15:48 PM] info: 	Authenticated user: riya.frontdesk@example.com (frontdesk)
+[2025-09-05 07:15:48 PM] info: 	Trainer created by riya.frontdesk@example.com: nitishpathak213@gmail.com
+[2025-09-05 07:15:48 PM] info: 	::1 - - [05/Sep/2025:13:45:48 +0000] "POST /api/trainers HTTP/1.1" 201 247 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-05 07:16:21 PM] info: 	Login success: nitishpathak213@gmail.com (USER)
+[2025-09-05 07:16:21 PM] info: 	::1 - - [05/Sep/2025:13:46:21 +0000] "POST /api/auth/login HTTP/1.1" 200 406 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+[2025-09-13 08:32:27 AM] warn: 	Login failed - Incorrect password for nitishpathak203@gmail.com
+[2025-09-13 08:32:27 AM] info: 	::1 - - [13/Sep/2025:03:02:27 +0000] "POST /api/auth/login HTTP/1.1" 401 29 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 08:33:59 AM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-13 08:33:59 AM] info: 	::1 - - [13/Sep/2025:03:03:59 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 09:58:43 AM] info: 	::1 - - [13/Sep/2025:04:28:43 +0000] "PUT /api/members/bmi HTTP/1.1" 404 154 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 09:59:33 AM] warn: 	Invalid token - user not found
+[2025-09-13 09:59:33 AM] info: 	::1 - - [13/Sep/2025:04:29:33 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 10:00:49 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:00:49 AM] info: 	::1 - - [13/Sep/2025:04:30:49 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 10:01:06 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:01:06 AM] info: 	::1 - - [13/Sep/2025:04:31:06 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 10:04:12 AM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-13 10:04:12 AM] info: 	::1 - - [13/Sep/2025:04:34:12 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 10:04:27 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:04:27 AM] info: 	::1 - - [13/Sep/2025:04:34:27 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 10:42:54 AM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-13 10:42:54 AM] info: 	::1 - - [13/Sep/2025:05:12:54 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 10:43:09 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:43:09 AM] info: 	::1 - - [13/Sep/2025:05:13:09 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 10:50:22 AM] warn: 	Invalid token - user not found
+[2025-09-13 10:50:22 AM] info: 	::1 - - [13/Sep/2025:05:20:22 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 12:02:52 PM] warn: 	Invalid token - user not found
+[2025-09-13 12:02:52 PM] info: 	::1 - - [13/Sep/2025:06:32:52 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 12:13:03 PM] warn: 	Invalid token - user not found
+[2025-09-13 12:13:03 PM] info: 	::1 - - [13/Sep/2025:06:43:03 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 12:13:05 PM] warn: 	Invalid token - user not found
+[2025-09-13 12:13:05 PM] info: 	::1 - - [13/Sep/2025:06:43:05 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:26:11 PM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-13 04:26:11 PM] info: 	::1 - - [13/Sep/2025:10:56:11 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:28:29 PM] info: 	Login success: john1@fitlife.com (USER)
+[2025-09-13 04:28:29 PM] info: 	::1 - - [13/Sep/2025:10:58:29 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:27 PM] info: 	::1 - - [13/Sep/2025:11:00:27 +0000] "GET /api/members HTTP/1.1" 200 6550747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:27 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b7e09a6a936c5a16b952ce/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b7d3253ecaaeba87b4dcec/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b7e2736a936c5a16b952e3/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b7d3043ecaaeba87b4dcda/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b6e13c52b4311797abfa00/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b7d3183ecaaeba87b4dce0/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b7d31d3ecaaeba87b4dce6/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 200 514749 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b6df6bb339c685a1be029e/image HTTP/1.1" 200 378622 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b6df8fb339c685a1be02ad/image HTTP/1.1" 200 378622 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	::1 - - [13/Sep/2025:11:00:28 +0000] "GET /api/members/68b7e2736a936c5a16b952e3/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:28 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 200 231485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b7e09a6a936c5a16b952ce/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 200 231485 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b7d3043ecaaeba87b4dcda/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b7d3253ecaaeba87b4dcec/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 200 108029 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b7d3183ecaaeba87b4dce0/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b6e13c52b4311797abfa00/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b7d31d3ecaaeba87b4dce6/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b6df8fb339c685a1be02ad/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68b6df6bb339c685a1be029e/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:30:29 PM] info: 	::1 - - [13/Sep/2025:11:00:29 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:50 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68b7e09a6a936c5a16b952ce/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68b7e2736a936c5a16b952e3/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68b7d3183ecaaeba87b4dce0/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68b7d3043ecaaeba87b4dcda/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68b6e13c52b4311797abfa00/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68b7d3253ecaaeba87b4dcec/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68b7d31d3ecaaeba87b4dce6/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68b6df8fb339c685a1be02ad/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:51 PM] info: 	::1 - - [13/Sep/2025:11:12:51 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b6df6bb339c685a1be029e/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b7e2736a936c5a16b952e3/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b7e09a6a936c5a16b952ce/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b7d3253ecaaeba87b4dcec/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b7d3183ecaaeba87b4dce0/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b7d31d3ecaaeba87b4dce6/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b7d3043ecaaeba87b4dcda/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b6e13c52b4311797abfa00/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68aefd94f1808c2821431fe5/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/689a28acbcd1188790ff153a/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68aa8aa33fcb320984a7ea27/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/689600a806ec7152361c2435/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/689db2552af47c67017686d9/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	Authenticated user: john1@fitlife.com (owner)
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/6895fdca06ec7152361c242f/image HTTP/1.1" 404 43 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b6df8fb339c685a1be02ad/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b69f178d92475c2beeedf0/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:42:52 PM] info: 	::1 - - [13/Sep/2025:11:12:52 +0000] "GET /api/members/68b6df6bb339c685a1be029e/image HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:43:12 PM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-13 04:43:12 PM] info: 	::1 - - [13/Sep/2025:11:13:12 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:44:01 PM] warn: 	Invalid token - user not found
+[2025-09-13 04:44:01 PM] info: 	::1 - - [13/Sep/2025:11:14:01 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 04:44:28 PM] warn: 	Invalid token - user not found
+[2025-09-13 04:44:28 PM] info: 	::1 - - [13/Sep/2025:11:14:28 +0000] "PUT /api/members/bmi HTTP/1.1" 401 23 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 05:16:17 PM] info: 	Authenticated: nik@example.com (Member)
+[2025-09-13 05:16:17 PM] info: 	::1 - - [13/Sep/2025:11:46:17 +0000] "PUT /api/members/bmi HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 05:20:02 PM] info: 	Authenticated: nik@example.com (Member)
+[2025-09-13 05:20:02 PM] info: 	::1 - - [13/Sep/2025:11:50:02 +0000] "PUT /api/members/bmi HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 05:49:24 PM] info: 	Authenticated: nik@example.com (Member)
+[2025-09-13 05:49:24 PM] info: 	::1 - - [13/Sep/2025:12:19:24 +0000] "PUT /api/members/bmi HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 05:54:58 PM] info: 	Authenticated: nik@example.com (Member)
+[2025-09-13 05:54:58 PM] info: 	::1 - - [13/Sep/2025:12:24:58 +0000] "PUT /api/members/bmi HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-13 09:22:21 PM] info: 	Authenticated: nik@example.com (Member)
+[2025-09-13 09:22:21 PM] info: 	::1 - - [13/Sep/2025:15:52:21 +0000] "PUT /api/members/bmi HTTP/1.1" 403 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-17 09:31:50 PM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-17 09:31:50 PM] info: 	::1 - - [17/Sep/2025:16:01:50 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-17 09:32:10 PM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-17 09:32:10 PM] info: 	::1 - - [17/Sep/2025:16:02:10 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-17 10:03:29 PM] info: 	Login success: nik@example.com (MEMBER)
+[2025-09-17 10:03:29 PM] info: 	::1 - - [17/Sep/2025:16:33:29 +0000] "POST /api/auth/login HTTP/1.1" 200 377 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-17 10:09:58 PM] info: 	Login success: john1@fitlife.com (USER)
+[2025-09-17 10:09:58 PM] info: 	::1 - - [17/Sep/2025:16:39:58 +0000] "POST /api/auth/login HTTP/1.1" 200 385 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-17 10:11:17 PM] info: 	Login success: vandanaramawat04@gmail.com (USER)
+[2025-09-17 10:11:17 PM] info: 	::1 - - [17/Sep/2025:16:41:17 +0000] "POST /api/auth/login HTTP/1.1" 200 392 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2025-09-20 08:55:34 PM] error: 	❌ MongoDB connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-09-20 08:56:32 PM] error: 	❌ MongoDB connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
